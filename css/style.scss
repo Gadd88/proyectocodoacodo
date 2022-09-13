@@ -76,19 +76,38 @@ body{
                     text-align: center;
                 }
                 .detalles{
-                    background-color: rgba(255,255,255,0.2);
+                    background-color: rgba(121, 5, 82,0.7);
                     width: 100%;
                     padding: 10px;
+                    line-height: 25px;
                 }
             }
-            .belgrano{
-                background: url("../img/Belgrano/Gontran Cherrier/20220704_195848.jpg") no-repeat;
-                background-size: cover;
+            .belgrano, .caballito, .palermo, .recoleta, .villa-crespo{
                 filter: grayscale(100%);
                 transition: all 0.3s;
                 &:hover{
                     filter: none;
                 }
+            }
+            .belgrano{
+                background: url("../img/Belgrano/Gontran Cherrier/20220704_195848.jpg") no-repeat;
+                background-size: cover;
+            }
+            .caballito{
+                background: url("../img/Caballito/Amelia Cafe/2022-01-08.jpg") no-repeat;
+                background-size: cover;
+            }
+            .palermo{
+                background:url("../img/Palermo/El Patio/2022-08-26.jpg") no-repeat;
+                background-size: cover;
+            }
+            .recoleta{
+                background:url("../img/recoleta/Edison Cafe/2022-01-19.webp") no-repeat;
+                background-size: cover;
+            }
+            .villa-crespo{
+                background: url("../img/Villa Crespo/Petit Bouquet/2022-08-13.webp") no-repeat;
+                background-size: cover;
             }
         }
     }

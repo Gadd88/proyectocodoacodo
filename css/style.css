@@ -79,18 +79,37 @@ body main .barrios .recos-barrios-bar h3 {
   text-align: center;
 }
 body main .barrios .recos-barrios-bar .detalles {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(121, 5, 82, 0.7);
   width: 100%;
   padding: 10px;
+  line-height: 25px;
+}
+body main .barrios .belgrano, body main .barrios .caballito, body main .barrios .palermo, body main .barrios .recoleta, body main .barrios .villa-crespo {
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+body main .barrios .belgrano:hover, body main .barrios .caballito:hover, body main .barrios .palermo:hover, body main .barrios .recoleta:hover, body main .barrios .villa-crespo:hover {
+  filter: none;
 }
 body main .barrios .belgrano {
   background: url("../img/Belgrano/Gontran Cherrier/20220704_195848.jpg") no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
-  transition: all 0.3s;
 }
-body main .barrios .belgrano:hover {
-  filter: none;
+body main .barrios .caballito {
+  background: url("../img/Caballito/Amelia Cafe/2022-01-08.jpg") no-repeat;
+  background-size: cover;
+}
+body main .barrios .palermo {
+  background: url("../img/Palermo/El Patio/2022-08-26.jpg") no-repeat;
+  background-size: cover;
+}
+body main .barrios .recoleta {
+  background: url("../img/recoleta/Edison Cafe/2022-01-19.webp") no-repeat;
+  background-size: cover;
+}
+body main .barrios .villa-crespo {
+  background: url("../img/Villa Crespo/Petit Bouquet/2022-08-13.webp") no-repeat;
+  background-size: cover;
 }
 body footer {
   position: relative;
