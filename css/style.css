@@ -22,6 +22,9 @@ body header nav {
   justify-content: flex-start;
   align-items: center;
 }
+body header nav img {
+  margin-left: 50px;
+}
 body header nav ul {
   margin-left: 30%;
   list-style: none;
@@ -83,13 +86,20 @@ body main .barrios .recos-barrios-bar .detalles {
   width: 100%;
   padding: 10px;
   line-height: 25px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 body main .barrios .belgrano, body main .barrios .caballito, body main .barrios .palermo, body main .barrios .recoleta, body main .barrios .villa-crespo {
   filter: grayscale(100%);
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 body main .barrios .belgrano:hover, body main .barrios .caballito:hover, body main .barrios .palermo:hover, body main .barrios .recoleta:hover, body main .barrios .villa-crespo:hover {
   filter: none;
+  transform: translateY(-10px);
+  border: 2px solid rgba(121, 5, 82, 0.7);
+}
+body main .barrios .belgrano:hover .detalles, body main .barrios .caballito:hover .detalles, body main .barrios .palermo:hover .detalles, body main .barrios .recoleta:hover .detalles, body main .barrios .villa-crespo:hover .detalles {
+  opacity: 1;
 }
 body main .barrios .belgrano {
   background: url("../img/Belgrano/Gontran Cherrier/20220704_195848.jpg") no-repeat;
@@ -104,7 +114,7 @@ body main .barrios .palermo {
   background-size: cover;
 }
 body main .barrios .recoleta {
-  background: url("../img/recoleta/Edison Cafe/2022-01-19.webp") no-repeat;
+  background: url("../img/recoleta/Edison Cafe/Screenshot_20220911-221646_Instagram.jpg") no-repeat;
   background-size: cover;
 }
 body main .barrios .villa-crespo {

@@ -19,6 +19,9 @@ body{
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            img{
+                margin-left: 50px;
+            }
             ul{
                 margin-left: 30%;
                 list-style: none;
@@ -80,13 +83,20 @@ body{
                     width: 100%;
                     padding: 10px;
                     line-height: 25px;
+                    opacity: 0;
+                    transition: all 0.5s
                 }
             }
             .belgrano, .caballito, .palermo, .recoleta, .villa-crespo{
                 filter: grayscale(100%);
-                transition: all 0.3s;
+                transition: all 0.1s;
                 &:hover{
                     filter: none;
+                    transform: translateY(-10px);
+                    border: 2px solid rgba(121, 5, 82,0.7);
+                }
+                &:hover .detalles{
+                    opacity: 1;
                 }
             }
             .belgrano{
@@ -102,7 +112,7 @@ body{
                 background-size: cover;
             }
             .recoleta{
-                background:url("../img/recoleta/Edison Cafe/2022-01-19.webp") no-repeat;
+                background:url("../img/recoleta/Edison Cafe/Screenshot_20220911-221646_Instagram.jpg") no-repeat;
                 background-size: cover;
             }
             .villa-crespo{
