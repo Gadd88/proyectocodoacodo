@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form_style.css" type="text/css"/>
   </head>
   <body>
     <header>
       <nav>
         <img src="./img/logo.png" width="200" alt="recobar logo" />
         <ul class="nav-menu">
-          <li class="menu-option"><a href="#">Inicio</a></li>
-          <li class="menu-option"><a href="#">Nosotros</a></li>
-          <li class="menu-option"><a href="./contacto.html">Contacto</a></li>
+          <li class="menu-option"><a href="./index.html">Inicio</a></li>
+          <li class="menu-option"><a href="#nosotros">Nosotros</a></li>
+          <li class="menu-option"><a href="#contactanos">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="inicio">
       <section class="hero">
         <h1>Bienvenidos</h1>
         <p class="sub-hero">
@@ -70,9 +71,38 @@
           </article>
         </section>
       </section>
+      <section id="nosotros">
+        <article class="hero">
+          <h2>Un gusto conocerte</h2>
+          <p>Somos un grupo de estudiantes del programa nacional Argentino Codo a Codo 4.0. Esta página web forma parte de un proyecto práctico donde ponemos en conjunto todo lo visto y aprendido hasta el momento, o al menos tratamos XD.. </p>
+        </article>
+      </section>
+      <section id="contactanos">
+        <div class="container_back-triangle">
+          <div class="triangle triangle1"></div>
+          <div class="triangle triangle2"></div>
+          <div class="triangle triangle3"></div>
+        </div>
+        <div id="contenedor">
+          <h2>Contactanos</h2>
+        <div id="formulario">
+          <form method="POST">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+            </br>
+            <input type="email" name="email" placeholder="Ingrese su email">
+            </br>
+            <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
+            </br>
+            <textarea rows="10"></textarea>
+            <button class="boton-enviar" type="submit" name="enviar" value="Enviar">Enviar</button>
+          </form>
+      </section>
     </main>
     <footer>
       <h4>Proyecto Integrador © Codo a Codo © 2022</h4>
+      <a class="volver" href="#inicio">
+        <img src="./img/subir.png" alt="subir">
+      </a>
     </footer>
   </body>
 </html>

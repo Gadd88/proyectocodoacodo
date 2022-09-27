@@ -11,9 +11,13 @@ body {
   height: 100vh;
 }
 body header {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
   width: 100%;
   height: 100px;
   background-color: rgb(0, 0, 0);
+  border-bottom: 3px solid #aaa;
 }
 body header nav {
   padding: 10px;
@@ -33,22 +37,30 @@ body header nav ul {
   justify-content: space-between;
 }
 body header nav ul .menu-option {
+  font-size: 25px;
   font-weight: 600;
   color: #fff;
 }
-body header nav ul .menu-option :visited {
+body header nav ul .menu-option a {
+  text-decoration: none;
+  transition: all 0.3s ease;
   color: #fff;
 }
+body header nav ul .menu-option a:hover {
+  text-decoration: underline;
+}
 body main {
+  scroll-behavior: smooth;
   margin: 50px;
 }
 body main .hero {
+  margin-top: 150px;
   text-align: center;
   height: 150px;
 }
 body main .hero h1 {
   font-size: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 body main .hero p {
   font-size: 25px;
@@ -59,18 +71,31 @@ body main .hero p span {
   text-decoration: underline;
 }
 body main .recos {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 300ms;
   margin: 50px auto;
+  height: 60vh;
+  padding: 25px;
 }
 body main .recos h3 {
   margin-bottom: 25px;
   letter-spacing: 2px;
+  text-decoration: underline;
 }
-body main .barrios {
+body main .recos p {
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+body main .recos .barrios {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
-body main .barrios .recos-barrios-bar {
+body main .recos .barrios .recos-barrios-bar {
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 20px;
@@ -78,10 +103,10 @@ body main .barrios .recos-barrios-bar {
   width: 20%;
   height: 350px;
 }
-body main .barrios .recos-barrios-bar h3 {
+body main .recos .barrios .recos-barrios-bar h3 {
   text-align: center;
 }
-body main .barrios .recos-barrios-bar .detalles {
+body main .recos .barrios .recos-barrios-bar .detalles {
   background-color: rgba(121, 5, 82, 0.7);
   width: 100%;
   padding: 10px;
@@ -89,40 +114,182 @@ body main .barrios .recos-barrios-bar .detalles {
   opacity: 0;
   transition: all 0.5s;
 }
-body main .barrios .belgrano, body main .barrios .caballito, body main .barrios .palermo, body main .barrios .recoleta, body main .barrios .villa-crespo {
+body main .recos .barrios .belgrano, body main .recos .barrios .caballito, body main .recos .barrios .palermo, body main .recos .barrios .recoleta, body main .recos .barrios .villa-crespo {
   filter: grayscale(100%);
   transition: all 0.1s;
 }
-body main .barrios .belgrano:hover, body main .barrios .caballito:hover, body main .barrios .palermo:hover, body main .barrios .recoleta:hover, body main .barrios .villa-crespo:hover {
+body main .recos .barrios .belgrano:hover, body main .recos .barrios .caballito:hover, body main .recos .barrios .palermo:hover, body main .recos .barrios .recoleta:hover, body main .recos .barrios .villa-crespo:hover {
   filter: none;
   transform: translateY(-10px);
-  border: 2px solid rgba(121, 5, 82, 0.7);
+  border: none;
 }
-body main .barrios .belgrano:hover .detalles, body main .barrios .caballito:hover .detalles, body main .barrios .palermo:hover .detalles, body main .barrios .recoleta:hover .detalles, body main .barrios .villa-crespo:hover .detalles {
+body main .recos .barrios .belgrano:hover .detalles, body main .recos .barrios .caballito:hover .detalles, body main .recos .barrios .palermo:hover .detalles, body main .recos .barrios .recoleta:hover .detalles, body main .recos .barrios .villa-crespo:hover .detalles {
   opacity: 1;
 }
-body main .barrios .belgrano {
+body main .recos .barrios .belgrano {
   background: url("../img/Belgrano/Gontran Cherrier/20220704_195848.jpg") no-repeat;
   background-size: cover;
 }
-body main .barrios .caballito {
+body main .recos .barrios .caballito {
   background: url("../img/Caballito/Amelia Cafe/2022-01-08.jpg") no-repeat;
   background-size: cover;
 }
-body main .barrios .palermo {
+body main .recos .barrios .palermo {
   background: url("../img/Palermo/El Patio/2022-08-26.jpg") no-repeat;
   background-size: cover;
 }
-body main .barrios .recoleta {
+body main .recos .barrios .recoleta {
   background: url("../img/recoleta/Edison Cafe/Screenshot_20220911-221646_Instagram.jpg") no-repeat;
   background-size: cover;
 }
-body main .barrios .villa-crespo {
+body main .recos .barrios .villa-crespo {
   background: url("../img/Villa Crespo/Petit Bouquet/2022-08-13.webp") no-repeat;
   background-size: cover;
 }
+body main #nosotros {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 300ms;
+  height: 60vh;
+  line-height: 30px;
+}
+body main #nosotros h2 {
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+body main #nosotros p {
+  font-size: 20px;
+  line-height: 50px;
+  width: 40vw;
+  text-align: justify;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+body main #contactanos {
+  height: 50vh;
+}
+body main #contactanos .container_back-triangle {
+  max-width: 1200px;
+  height: 600px;
+  margin: auto;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main #contactanos .container_back-triangle .triangle {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  opacity: 0.65;
+}
+body main #contactanos .container_back-triangle .triangle1 {
+  background: linear-gradient(to left, #0ea1e6, #1e67c7);
+  right: 100px;
+  top: 100px;
+  width: 250px;
+  height: 250px;
+  -webkit-animation: t1 5s ease infinite;
+          animation: t1 5s ease infinite;
+}
+body main #contactanos .container_back-triangle .triangle2 {
+  background: linear-gradient(to left, #ee8105, #c7371e);
+  top: 350px;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: t2 9s ease infinite;
+          animation: t2 9s ease infinite;
+}
+body main #contactanos .container_back-triangle .triangle3 {
+  background: linear-gradient(to left, #1b8fc5, #df0f8f);
+  left: 200px;
+  -webkit-animation: t3 10s ease infinite;
+          animation: t3 10s ease infinite;
+}
+@-webkit-keyframes t1 {
+  0% {
+    transform: rotate(45deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(45deg) translateY(20px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+@keyframes t1 {
+  0% {
+    transform: rotate(45deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(45deg) translateY(20px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+@-webkit-keyframes t2 {
+  0% {
+    transform: rotate(65deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(65deg) translateY(40px);
+  }
+  100% {
+    transform: rotate(65deg) translateY(0px);
+  }
+}
+@keyframes t2 {
+  0% {
+    transform: rotate(65deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(65deg) translateY(40px);
+  }
+  100% {
+    transform: rotate(65deg) translateY(0px);
+  }
+}
+@-webkit-keyframes t3 {
+  0% {
+    transform: rotate(45deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(45deg) translateY(50px) translateX(-15px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+@keyframes t3 {
+  0% {
+    transform: rotate(45deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(45deg) translateY(50px) translateX(-15px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
 body footer {
+  height: 50vh;
   position: relative;
-  bottom: 5px;
+  top: 10%;
   text-align: center;
+  margin-bottom: 0;
+}
+body footer .volver {
+  position: fixed;
+  float: right;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
