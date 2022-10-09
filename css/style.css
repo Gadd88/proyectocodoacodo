@@ -292,4 +292,18 @@ body footer .volver {
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+}
+body .card {
+  display: flex;
+  justify-content: center;
+}
+body .card img {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+body .card img:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
