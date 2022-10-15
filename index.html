@@ -7,16 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form_style.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/8d8e431bc7.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body onload="onLoad()">
     <header>
       <nav>
         <img src="./img/logo.png" width="200" alt="recobar logo" />
         <ul class="nav-menu">
           <li class="menu-option"><a href="./index.html">Inicio</a></li>
+          <li class="menu-option"><a href="#contactanos">Lugares</a></li>
           <li class="menu-option"><a href="#nosotros">Nosotros</a></li>
           <li class="menu-option"><a href="#contactanos">Contacto</a></li>
         </ul>
+        <div class="clima_widget">
+          <i class="fa-solid fa-cloud-sun" id="clima"></i>
+          <ul class="clima_datos">
+            <li id="temp"></li>
+            <li id="location"></li>
+            <!-- <li id="description"></li> -->
+          </ul>
+        </div>
       </nav>
     </header>
     <main id="inicio">
@@ -34,11 +44,20 @@
           opciones, con fotos y ubicación!!
         </p>
         <section class="barrios">
-          <article class="recos-barrios-bar belgrano">
+          <article class="recos-barrios-bar belgrano" onclick="mostrar()">
             <h3>Belgrano</h3>
             <div class="detalles">
                 <h4>Gontran Cherrier</h4>
                 <p>Restaurant Francés</p>
+            </div>
+            <div class="box_img" id="cafe_img">
+              <!-- <img src="./img/Belgrano/GontranCherrier/1.jpg" alt="">
+              <img src="./img/Belgrano/GontranCherrier/2.jpg" alt="">
+              <img src="./img/Belgrano/GontranCherrier/3.jpg" alt="">
+              <img src="./img/Belgrano/GontranCherrier/4.jpg" alt="">
+              <img src="./img/Belgrano/GontranCherrier/5.jpg" alt="">
+              <img src="./img/Belgrano/GontranCherrier/6.jpg" alt="">
+              <img src="./img/Belgrano/GontranCherrier/7.jpg" alt=""> -->
             </div>            
           </article>
           <article class="recos-barrios-bar caballito">
@@ -75,6 +94,13 @@
         <article class="hero">
           <h2>Un gusto conocerte</h2>
           <p>Somos un grupo de estudiantes del programa nacional Argentino Codo a Codo 4.0. Esta página web forma parte de un proyecto práctico donde ponemos en conjunto todo lo visto y aprendido hasta el momento, o al menos tratamos XD.. </p>
+          <div class="icons">
+            <h4>Las tecnologias utilizadas en este proyecto son:</h4>
+            <img src="img/icons/html5.svg" alt="html">
+            <img src="img/icons/css3-alt.svg" alt="css3">
+            <img src="img/icons/js.svg" alt="javascript">
+            <img src="img/icons/bootstrap.svg" alt="bootstrap">
+          </div>
         </article>
       </section>
       <section id="contactanos">
@@ -98,7 +124,6 @@
           </form>
       </section>
       <div id="fotos">
-
       </div>
     </main>
     <footer>
