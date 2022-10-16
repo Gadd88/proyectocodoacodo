@@ -12,4 +12,8 @@ close.addEventListener("click", () => {
   modal_container.style.opacity = 0;
 });
 
+let fotos = () => {
+    document.getElementById('modal_ventana').innerHTML = `
+    <img src=${elPatio}>`
+};
 
