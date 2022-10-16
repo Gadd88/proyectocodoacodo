@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RecoBar</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/form_style.css" type="text/css"/>
     <script src="https://kit.fontawesome.com/8d8e431bc7.js" crossorigin="anonymous"></script>
   </head>
   <body onload="onLoad()">
@@ -15,16 +14,15 @@
         <img src="./img/logo.png" width="200" alt="recobar logo" />
         <ul class="nav-menu">
           <li class="menu-option"><a href="./index.html">Inicio</a></li>
-          <li class="menu-option"><a href="#contactanos">Lugares</a></li>
+          <li class="menu-option"><a href="lugares.html">Lugares</a></li>
           <li class="menu-option"><a href="#nosotros">Nosotros</a></li>
           <li class="menu-option"><a href="#contactanos">Contacto</a></li>
         </ul>
         <div class="clima_widget">
           <i class="fa-solid fa-cloud-sun" id="clima"></i>
           <ul class="clima_datos">
-            <li id="temp"></li>
             <li id="location"></li>
-            <!-- <li id="description"></li> -->
+            <li id="temp"></li>
           </ul>
         </div>
       </nav>
@@ -37,28 +35,26 @@
         </p>
       </section>
       <section class="recos">
+        <div class="modal_container" id="modal_container">
+          <div class="modal">
+            <h2 class="modal_titulo">Ventana Modal</h2>
+            <p class="modal_parrafo">Descripcion Ventana Modal</p>
+            <button id="close_modal">Cerrar</button>
+          </div>
+        </div>
         <h3>Nuestras recomendaciones del dia de hoy</h3>
         <p>
           Aqui te ofrecemos una recomendacion TOP por barrio, para ver las demas
           puedes ingresar a la sección de cada barrio y ver las distintas
           opciones, con fotos y ubicación!!
         </p>
-        <section class="barrios">
-          <article class="recos-barrios-bar belgrano" onclick="mostrar()">
+        <section class="barrios" id="open_modal">
+          <article class="recos-barrios-bar belgrano open_modal">
             <h3>Belgrano</h3>
             <div class="detalles">
                 <h4>Gontran Cherrier</h4>
                 <p>Restaurant Francés</p>
             </div>
-            <div class="box_img" id="cafe_img">
-              <!-- <img src="./img/Belgrano/GontranCherrier/1.jpg" alt="">
-              <img src="./img/Belgrano/GontranCherrier/2.jpg" alt="">
-              <img src="./img/Belgrano/GontranCherrier/3.jpg" alt="">
-              <img src="./img/Belgrano/GontranCherrier/4.jpg" alt="">
-              <img src="./img/Belgrano/GontranCherrier/5.jpg" alt="">
-              <img src="./img/Belgrano/GontranCherrier/6.jpg" alt="">
-              <img src="./img/Belgrano/GontranCherrier/7.jpg" alt=""> -->
-            </div>            
           </article>
           <article class="recos-barrios-bar caballito">
             <h3>Caballito</h3>
@@ -103,34 +99,35 @@
           </div>
         </article>
       </section>
+      <div class="container_back-triangle">
+        <div class="triangle triangle1"></div>
+        <div class="triangle triangle2"></div>
+        <div class="triangle triangle3"></div>
+      </div>
       <section id="contactanos">
-        <div class="container_back-triangle">
-          <div class="triangle triangle1"></div>
-          <div class="triangle triangle2"></div>
-          <div class="triangle triangle3"></div>
-        </div>
         <div id="contenedor">
           <h2>Contactanos</h2>
-        <div id="formulario">
-          <form method="POST">
-            <input type="text" name="nombre" placeholder="Ingrese su nombre">
-            </br>
-            <input type="email" name="email" placeholder="Ingrese su email">
-            </br>
-            <input type="tel" name="telefono" placeholder="Ingrese su teléfono">
-            </br>
-            <textarea rows="10"></textarea>
-            <button class="boton-enviar" type="submit" name="enviar" value="Enviar">Enviar</button>
-          </form>
+          <div id="formulario">
+            <form id="formulario_form">
+              <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre" >
+              </br>
+              <input type="email" name="email" placeholder="Ingrese su email" id="email" >
+              </br>
+              <input type="tel" name="telefono" placeholder="Ingrese su teléfono" id="tel" >
+              </br>
+              <textarea rows="10" placeholder="Ingrese su mensaje"></textarea>
+              <button class="boton-enviar" type="submit">Enviar</button>
+              <p id="form_error"></p>
+            </form>
+          </div>
+        </div>
       </section>
+      
       <div id="fotos">
       </div>
     </main>
     <footer>
       <h4>Proyecto Integrador © Codo a Codo © 2022</h4>
-      <!-- <a class="volver" href="#inicio">
-        <img src="./img/subir.png" alt="subir">
-      </a> -->
     </footer>
     <script src="./js/datos.js"></script>
     <script src="./js/main.js"></script>

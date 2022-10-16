@@ -1,0 +1,15 @@
+#barrios_recos .belgrano, #barrios_recos .caballito, #barrios_recos .palermo, #barrios_recos .recoleta, #barrios_recos .villa-crespo {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 300ms;
+  margin: 150px auto;
+  height: 600px;
+  padding: 25px;
+}
+#barrios_recos iframe {
+  border-radius: 15px;
+  border: 2px solid rgba(5, 107, 190, 0.5);
+}/*# sourceMappingURL=lugares_style.css.map */
