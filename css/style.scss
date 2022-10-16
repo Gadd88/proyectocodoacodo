@@ -110,40 +110,6 @@ body{
                 font-size: 20px;
                 padding-bottom: 25px;
             }
-            .modal_container{
-                display: flex;
-                background-color: rgba(204, 204, 204,0.9);
-                align-items: center;
-                justify-content: center;
-                border-radius: 15px;
-                pointer-events: none;
-                position: fixed;
-                opacity: 0;
-                z-index: 10;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                .show{
-                    pointer-events: auto;
-                    opacity: 1;
-                }
-                .modal{
-                    width: 600px;
-                    max-width: 100%;
-                    margin: auto;
-                    padding: 30px 50px;
-                    border-radius: 15px;
-                    background-color: rgba(17, 17, 17, 0.9);
-                    .modal_titulo{
-                        margin: 0;
-                    }
-                    .modal_parrafo{
-                        opacity: 0.7;
-                        font-size: 15px;
-                    }
-                }
-        }
             .barrios{
                 display: flex;
                 justify-content: space-around;

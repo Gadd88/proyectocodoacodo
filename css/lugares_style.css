@@ -9,6 +9,49 @@
   height: 600px;
   padding: 25px;
 }
+#barrios_recos .belgrano h2, #barrios_recos .caballito h2, #barrios_recos .palermo h2, #barrios_recos .recoleta h2, #barrios_recos .villa-crespo h2 {
+  text-align: center;
+}
+#barrios_recos .belgrano .modal_container, #barrios_recos .caballito .modal_container, #barrios_recos .palermo .modal_container, #barrios_recos .recoleta .modal_container, #barrios_recos .villa-crespo .modal_container {
+  display: flex;
+  background-color: rgba(204, 204, 204, 0.9);
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  position: fixed;
+  opacity: 0;
+  top: 50px;
+  left: 150px;
+  height: 70%;
+  width: 70%;
+}
+#barrios_recos .belgrano .modal_container .show, #barrios_recos .caballito .modal_container .show, #barrios_recos .palermo .modal_container .show, #barrios_recos .recoleta .modal_container .show, #barrios_recos .villa-crespo .modal_container .show {
+  opacity: 1;
+}
+#barrios_recos .belgrano .modal_container .modal, #barrios_recos .caballito .modal_container .modal, #barrios_recos .palermo .modal_container .modal, #barrios_recos .recoleta .modal_container .modal, #barrios_recos .villa-crespo .modal_container .modal {
+  width: 600px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 30px 50px;
+  border-radius: 15px;
+  background-color: rgba(17, 17, 17, 0.9);
+}
+#barrios_recos .belgrano .modal_container .modal .modal_titulo, #barrios_recos .caballito .modal_container .modal .modal_titulo, #barrios_recos .palermo .modal_container .modal .modal_titulo, #barrios_recos .recoleta .modal_container .modal .modal_titulo, #barrios_recos .villa-crespo .modal_container .modal .modal_titulo {
+  margin: 0;
+}
+#barrios_recos .belgrano .modal_container .modal .modal_parrafo, #barrios_recos .caballito .modal_container .modal .modal_parrafo, #barrios_recos .palermo .modal_container .modal .modal_parrafo, #barrios_recos .recoleta .modal_container .modal .modal_parrafo, #barrios_recos .villa-crespo .modal_container .modal .modal_parrafo {
+  opacity: 0.7;
+  font-size: 15px;
+}
+#barrios_recos .belgrano .modal_container .modal #close_modal, #barrios_recos .caballito .modal_container .modal #close_modal, #barrios_recos .palermo .modal_container .modal #close_modal, #barrios_recos .recoleta .modal_container .modal #close_modal, #barrios_recos .villa-crespo .modal_container .modal #close_modal {
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgba(56, 156, 238, 0.938);
+  border: none;
+}
 #barrios_recos iframe {
   border-radius: 15px;
   border: 2px solid rgba(5, 107, 190, 0.5);

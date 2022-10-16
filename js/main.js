@@ -39,41 +39,60 @@ const setWeatherData = (data) => {
 
 /************************************************************************************ */
 
-const open = document.getElementsById("open_modal");
-const modal_container = document.getElementById("modal_container");
-const close = document.getElementById("close_modal");
 
-open.addEventListener("click", () => {
-  modal_container.classList.add("show");
-});
 
-close.addEventListener("click", () => {
-  modal_container.classList.remove("show");
-});
-
-document.getElementById("fotos").innerHTML = `
-<div class="card">
-    <img src=${feca}>
-</div>`;
 
 
 /********************************************************************************** */
 //Validacion de Formulario
 
 const formulario = document.getElementById('formulario_form');
-const nombre = document.getElementsById('nombre');
-const email = document.getElementsById('email');
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
 const tel = document.getElementById('tel');
+const mensaje = document.getElementById('mensaje');
 const error = document.getElementById('form_error');
-error.style.color = 'red';
+
 
 
 formulario.addEventListener('submit', e => {
-  e.preventDefault();
+  e.preventDefault()
+
+  let warnings = ""
+
+  let entrar = false
+
+  let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+  let regexTel = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
+
   if(nombre.value.length < 6){
-    alert('Nombre muy corto')
+    warnings += `El nombre no es válido <br>`
+    entrar = true
   }
+  if(!regexEmail.test(email.value)){
+    warnings += `El email no es válido <br>`
+    entrar = true
+  }
+  if(!regexTel.test(tel.value)){
+    warnings += `El teléfono no es válido <br>`
+    entrar = true
+  }
+  if(mensaje.value == null || mensaje.value == ''){
+    warnings += `El campo de mensaje no puede estar vacío`
+  }
+
+  document.getElementById('form_error').innerHTML = `
+  ${warnings}`
+  document.getElementById('form_error').style.color = 'red';
+
 })
+
+
+
+
+
+
 
 
 
