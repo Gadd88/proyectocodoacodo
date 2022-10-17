@@ -54,13 +54,46 @@
   background-color: rgba(56, 156, 238, 0.938);
   border: none;
 }
-#barrios_recos iframe {
+#barrios_recos .belgrano .flex-container, #barrios_recos .caballito .flex-container, #barrios_recos .palermo .flex-container, #barrios_recos .recoleta .flex-container, #barrios_recos .villa-crespo .flex-container {
+  display: flex;
+  height: 85%;
+  justify-content: space-around;
+  align-items: center;
+}
+#barrios_recos .belgrano .flex-container iframe, #barrios_recos .caballito .flex-container iframe, #barrios_recos .palermo .flex-container iframe, #barrios_recos .recoleta .flex-container iframe, #barrios_recos .villa-crespo .flex-container iframe {
   border-radius: 15px;
   border: 2px solid rgba(5, 107, 190, 0.5);
-  height: 75%;
-  margin-top: 20px;
+  height: 95%;
   filter: grayscale(100%);
 }
-#barrios_recos iframe:hover {
+#barrios_recos .belgrano .flex-container iframe:hover, #barrios_recos .caballito .flex-container iframe:hover, #barrios_recos .palermo .flex-container iframe:hover, #barrios_recos .recoleta .flex-container iframe:hover, #barrios_recos .villa-crespo .flex-container iframe:hover {
   filter: none;
+}
+#barrios_recos .belgrano .flex-container article, #barrios_recos .caballito .flex-container article, #barrios_recos .palermo .flex-container article, #barrios_recos .recoleta .flex-container article, #barrios_recos .villa-crespo .flex-container article {
+  border-radius: 15px;
+  border: 2px solid rgb(153, 3, 120);
+  height: 95%;
+  width: 300px;
+}
+#barrios_recos .belgrano .flex-container article .card, #barrios_recos .caballito .flex-container article .card, #barrios_recos .palermo .flex-container article .card, #barrios_recos .recoleta .flex-container article .card, #barrios_recos .villa-crespo .flex-container article .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#barrios_recos .belgrano .flex-container article .card .card-tit, #barrios_recos .caballito .flex-container article .card .card-tit, #barrios_recos .palermo .flex-container article .card .card-tit, #barrios_recos .recoleta .flex-container article .card .card-tit, #barrios_recos .villa-crespo .flex-container article .card .card-tit {
+  background-color: rgba(255, 129, 10, 0.705);
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 25px;
+}
+#barrios_recos .belgrano .flex-container article .card .card-des, #barrios_recos .caballito .flex-container article .card .card-des, #barrios_recos .palermo .flex-container article .card .card-des, #barrios_recos .recoleta .flex-container article .card .card-des, #barrios_recos .villa-crespo .flex-container article .card .card-des {
+  line-height: 30px;
+  width: 100%;
+}
+#barrios_recos .belgrano .flex-container article .card .card-des span, #barrios_recos .caballito .flex-container article .card .card-des span, #barrios_recos .palermo .flex-container article .card .card-des span, #barrios_recos .recoleta .flex-container article .card .card-des span, #barrios_recos .villa-crespo .flex-container article .card .card-des span {
+  text-decoration: underline;
 }/*# sourceMappingURL=lugares_style.css.map */

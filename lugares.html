@@ -27,6 +27,7 @@
           <ul class="clima_datos">
             <li id="location"></li>
             <li id="temp"></li>
+            <li id="description"></li>
           </ul>
         </div>
       </nav>
@@ -40,14 +41,6 @@
       <section id="barrios_recos">
         <section class="belgrano" id="belgrano">
           <h2 id="open_modal">Belgrano</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.395114026294!2d-58.450786050000005!3d-34.55546975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665931963849!5m2!1ses-419!2sar"
-            width="300"
-            height="300"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
           <div class="modal_container" id="modal_container">
             <div class="modal" id="modal_ventana">
               <h2 class="modal_titulo">Ventana Modal</h2>
@@ -55,67 +48,167 @@
               <button id="close_modal">Cerrar</button>
             </div>
           </div>
-          <article class="gontranCherrier">
-            <div class="card"></div>
-          </article>
-          <article class="moishaBakery"></article>
-          <article class="tognisCafe"></article>
+          <div class="flex-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.395114026294!2d-58.450786050000005!3d-34.55546975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665931963849!5m2!1ses-419!2sar"
+              width="300"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <article class="gontranCherrier">
+              <div class="card">
+                <h3 class="card-tit">Gontran Cherrier</h3>
+                <p class="card-des">
+                  <span>Dirección:</span> <strong>Malabia 1805</strong> <br/>
+                  Una selección de lo mejor de la pâtisserie francesa en Buenos Aires para sorprenderte día a día.
+                </p>
+              </div>
+            </article>
+            <article class="moishaBakery">
+              <div class="card">
+                <h3 class="card-tit">Moisha Bakery</h3>
+                <p class="card-des">
+                  <span>Dirección:</span> <strong>11 de Septiembre 1209</strong> <br/>
+                  Gran variedad en bocados dulces, salados y acompañamientos!! Los mejores Prétzels
+                </p>
+              </div>
+            </article>
+            <article class="tognisCafe">
+              <div class="card">
+                <h3 class="card-tit">Tognis Cafe</h3>
+                <p class="card-des">
+                  <span>Dirección:</span> <strong>Blanco Encalada 1675</strong> <br/>
+                  Un café, que para ser bien comprendido, merece ser visitado una y otra vez, en horarios tan variados como su propuesta de pastelería y panadería.
+                </p>
+              </div>
+            </article>
+          </div>
         </section>
         <section class="caballito" id="caballito">
           <h2>Caballito</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.023257937239!2d-58.453506413566615!3d-34.61665593576235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932033518!5m2!1ses-419!2sar"
-            width="300"
-            height="300"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <article class="ameliaCafe"></article>
-          <article class="feca"></article>
-          <article class="tauroCafe"></article>
+          <div class="flex-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.023257937239!2d-58.453506413566615!3d-34.61665593576235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932033518!5m2!1ses-419!2sar"
+              width="300"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <article class="ameliaCafe">
+              <div class="card">
+                <h3 class="card-tit">Amelia Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="feca">
+              <div class="card">
+                <h3 class="card-tit">Feca</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="tauroCafe">
+              <div class="card">
+                <h3 class="card-tit">Tauro Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+          </div>
         </section>
         <section class="palermo" id="palermo">
           <h2>Palermo</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.71808044965!2d-58.43856792853204!3d-34.57343209376262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932085772!5m2!1ses-419!2sar"
-            width="300"
-            height="300"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <article class="bertaCafe"></article>
-          <article class="elPatio"></article>
-          <article class="localSupport"></article>
+          <div class="flex-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.71808044965!2d-58.43856792853204!3d-34.57343209376262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932085772!5m2!1ses-419!2sar"
+              width="300"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <article class="bertaCafe">
+              <div class="card">
+                <h3 class="card-tit">Berta Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="elPatio">
+              <div class="card">
+                <h3 class="card-tit">El Patio Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="localSupport">
+              <div class="card">
+                <h3 class="card-tit">Local Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+          </div>
         </section>
         <section class="recoleta" id="recoleta">
           <h2>Recoleta</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13139.057618551244!2d-58.405119063576535!3d-34.58482738589492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932124584!5m2!1ses-419!2sar"
-            width="300"
-            height="300"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <article class="edisonCafe"></article>
-          <article class="magnoliasCafe"></article>
-          <article class="pani"></article>
+          <div class="flex-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13139.057618551244!2d-58.405119063576535!3d-34.58482738589492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932124584!5m2!1ses-419!2sar"
+              width="300"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <article class="edisonCafe">
+              <div class="card">
+                <h3 class="card-tit">Edison Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="magnoliasCafe">
+              <div class="card">
+                <h3 class="card-tit">Magnolia Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="pani">
+              <div class="card">
+                <h3 class="card-tit">Pani Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+          </div>
         </section>
         <section class="villa-crespo" id="villa-crespo">
           <h2>Villa Crespo</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.963362545566!2d-58.44992481357241!3d-34.598070935839715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0c687ee0b7%3A0x879b67a1fd77fb98!2sVilla%20Crespo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932149386!5m2!1ses-419!2sar"
-            width="300"
-            height="300"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <article class="1021cafe"></article>
-          <article class="borraCaffe"></article>
-          <article class="petitBouquet"></article>
+          <div class="flex-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.963362545566!2d-58.44992481357241!3d-34.598070935839715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0c687ee0b7%3A0x879b67a1fd77fb98!2sVilla%20Crespo%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932149386!5m2!1ses-419!2sar"
+              width="300"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <article class="cafe1021">
+              <div class="card">
+                <h3 class="card-tit">1021 Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="borraCaffe">
+              <div class="card">
+                <h3 class="card-tit">Borra Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="petitBouquet">
+              <div class="card">
+                <h3 class="card-tit">Petit Bouquet</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+          </div>
         </section>
       </section>
     </main>
