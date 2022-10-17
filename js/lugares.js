@@ -1,19 +1,17 @@
 //VENTANA MODAL
 
-const open = document.getElementById("open_modal");
-const modal_container = document.getElementById("modal_container");
-const close = document.getElementById("close_modal");
+const open = document.getElementById('open1');
+const modal_ventana = document.getElementById('modal_ventana');
+const close = document.getElementById('close_modal');
 
-open.addEventListener("click", () => {
-  modal_container.style.opacity = 1;
+open.addEventListener('click', () => {
+  modal_ventana.style.opacity = 1
+  modal_ventana.style.zIndex = 10;
 });
 
-close.addEventListener("click", () => {
-  modal_container.style.opacity = 0;
+close.addEventListener('click', () => {
+  modal_ventana.style.opacity = 0
+  modal_ventana.style.zIndex = -1;
 });
 
-let fotos = () => {
-    document.getElementById('modal_ventana').innerHTML = `
-    <img src=${elPatio}>`
-};
-
+document.getElementById('modal_ventana').innerHTML = `<img src=${gontranCherrier}`

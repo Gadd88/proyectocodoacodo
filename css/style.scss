@@ -93,7 +93,7 @@ body{
         }
         .recos{
             box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
-            background-color: rgba(255,255,255,0.05);
+            background-color: rgba(255, 255, 255, 0.76);
             border-radius: 15px;
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
@@ -248,7 +248,7 @@ body{
         }
         #nosotros{
             box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
-            background-color: rgba(255,255,255,0.05);
+            background-color: rgba(255, 255, 255, 0.76);
             border-radius: 15px;
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
@@ -294,7 +294,7 @@ body{
                 -o-border-radius: 15px;
                 -webkit-border-radius: 15px;
                 box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
-                background-color: rgba(255,255,255,0.05);
+                background-color: rgba(255, 255, 255, 0.76);
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 transition: all 300ms;
@@ -338,7 +338,7 @@ body{
                             padding: 15px;
                             outline: none;
                             border: 2px solid #fff;
-                            background-color:rgba(255, 255, 255, 0.712);
+                            background-color:rgba(109, 109, 109, 0.712);
                             resize: none;
                             &::placeholder{
                                 color: #000;
