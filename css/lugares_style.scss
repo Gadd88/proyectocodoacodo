@@ -14,48 +14,60 @@
             border-bottom: 2px solid rgba(255, 255, 255, 0.8);
             padding: 15px;
         }
-        .modal_ventana{
+        .modal_contenedor{
             display: flex;
-            background-color: rgba(204, 204, 204,0.9);
-            align-items: center;
-            justify-content: center;
-            border-radius: 15px;
-            // pointer-events: none;
+            flex-direction: column;
             position: fixed;
-            opacity: 0;
-            z-index: -1;
-            top: 50px;
+            width: 75%;
+            height: 95%;
+            top: 40px;
             left: 15%;
-            width: 70%;
-            height: 85%;
-            overflow: hidden;
-            img{
-                width: 300px;
-                height: 300px;
-                object-fit: contain;
-                transition: all 0.3s ease;
+            z-index: -1;
+            .modal_ventana{
+                display: flex;
+                background-color: rgba(0, 0, 0, 0.863);
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
                 border-radius: 15px;
-                border: 3px solid #fff;
-                &:hover{
-                    transform: scale(1.2);
+                padding: 25px;
+                // pointer-events: none;
+                position: fixed;
+                opacity: 0;
+                z-index: -1;
+                // top: 40px;
+                // left: 15%;
+                width: 70%;
+                height: 90%;
+                img{
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    transition: all 0.3s ease;
+                    border-radius: 15px;
+                    border: 3px solid #fff;
+                    &:hover{
+                        transform: scale(1.7);
+                    }
+                }
+                .show{
+                    // pointer-events: auto;
+                    opacity: 1;
                 }
             }
-            .show{
-                // pointer-events: auto;
-                opacity: 1;
-            }
-            .modal_titulo{
-                margin: 0;
-            }
-            .modal_parrafo{
-                opacity: 0.7;
-                font-size: 15px;
-            }
-            #close_modal{
+            button{
+                width: 150px;
+                height: 25px;
+                background-color: rgb(5, 107, 190);
                 border-radius: 15px;
-                padding: 15px;
-                background-color:rgba(56, 156, 238, 0.938);
                 border: none;
+                color: #fff;
+                position: fixed;
+                opacity: 0;
+                bottom: 25px;
+                z-index:11;
+                left: 45%;
             }
         }
         .flex-container{
