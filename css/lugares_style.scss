@@ -56,19 +56,6 @@
                     opacity: 1;
                 }
             }
-            button{
-                width: 150px;
-                height: 25px;
-                background-color: rgb(5, 107, 190);
-                border-radius: 15px;
-                border: none;
-                color: #fff;
-                position: fixed;
-                opacity: 0;
-                bottom: 25px;
-                z-index:11;
-                left: 45%;
-            }
         }
         .flex-container{
             display: flex;
@@ -111,6 +98,54 @@
                             text-decoration: underline;
                         }
                     }
+                }
+            }
+            .fotos_contenedor{
+                position: fixed;
+                width: 90%;
+                height: 60%;
+                top: 300px;
+                opacity: 0;
+                z-index: -1;
+                .fotos_gontran, .fotos_moisha, .fotos_tognis, .fotos_amelia{
+                    display: flex;
+                    background-color: rgba(0, 0, 0, 0.863);
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+                    border-radius: 15px;
+                    border: 2px solid #000;
+                    padding: 25px;
+                    position: fixed;
+                    opacity: 0;
+                    top: 300px;
+                    width: 90%;
+                    height: 60%;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                        transition: all 0.3s ease;
+                        border-radius: 15px;
+                        border: 3px solid #fff;
+                        &:hover{
+                            transform: scale(1.7);
+                        }
+                    }
+                }
+                .close{
+                    width: 25px;
+                    height: 25px;
+                    background-color: rgb(5, 107, 190);
+                    border-radius: 50%;
+                    border: none;
+                    color: #fff;
+                    opacity: 0;
+                    z-index: 15;
+                    position: relative;
+                    top: 15px;
+                    left: 1580px;
                 }
             }
         }

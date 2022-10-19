@@ -54,19 +54,6 @@
 #barrios_recos .belgrano .modal_contenedor .modal_ventana .show, #barrios_recos .caballito .modal_contenedor .modal_ventana .show, #barrios_recos .palermo .modal_contenedor .modal_ventana .show, #barrios_recos .recoleta .modal_contenedor .modal_ventana .show, #barrios_recos .villa-crespo .modal_contenedor .modal_ventana .show {
   opacity: 1;
 }
-#barrios_recos .belgrano .modal_contenedor button, #barrios_recos .caballito .modal_contenedor button, #barrios_recos .palermo .modal_contenedor button, #barrios_recos .recoleta .modal_contenedor button, #barrios_recos .villa-crespo .modal_contenedor button {
-  width: 150px;
-  height: 25px;
-  background-color: rgb(5, 107, 190);
-  border-radius: 15px;
-  border: none;
-  color: #fff;
-  position: fixed;
-  opacity: 0;
-  bottom: 25px;
-  z-index: 11;
-  left: 45%;
-}
 #barrios_recos .belgrano .flex-container, #barrios_recos .caballito .flex-container, #barrios_recos .palermo .flex-container, #barrios_recos .recoleta .flex-container, #barrios_recos .villa-crespo .flex-container {
   display: flex;
   height: 85%;
@@ -110,4 +97,53 @@
 }
 #barrios_recos .belgrano .flex-container article .card .card-des span, #barrios_recos .caballito .flex-container article .card .card-des span, #barrios_recos .palermo .flex-container article .card .card-des span, #barrios_recos .recoleta .flex-container article .card .card-des span, #barrios_recos .villa-crespo .flex-container article .card .card-des span {
   text-decoration: underline;
+}
+#barrios_recos .belgrano .flex-container .fotos_contenedor, #barrios_recos .caballito .flex-container .fotos_contenedor, #barrios_recos .palermo .flex-container .fotos_contenedor, #barrios_recos .recoleta .flex-container .fotos_contenedor, #barrios_recos .villa-crespo .flex-container .fotos_contenedor {
+  position: fixed;
+  width: 90%;
+  height: 60%;
+  top: 300px;
+  opacity: 0;
+  z-index: -1;
+}
+#barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_gontran, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_moisha, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_tognis, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_amelia, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_gontran, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_moisha, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_tognis, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_amelia, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_gontran, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_moisha, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_tognis, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_amelia, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_gontran, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_moisha, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_tognis, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_amelia, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_gontran, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_moisha, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_tognis, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_amelia {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.863);
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  padding: 25px;
+  position: fixed;
+  opacity: 0;
+  top: 300px;
+  width: 90%;
+  height: 60%;
+}
+#barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_gontran img, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_moisha img, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_tognis img, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_amelia img, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_gontran img, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_moisha img, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_tognis img, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_amelia img, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_gontran img, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_moisha img, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_tognis img, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_amelia img, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_gontran img, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_moisha img, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_tognis img, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_amelia img, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_gontran img, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_moisha img, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_tognis img, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_amelia img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  border: 3px solid #fff;
+}
+#barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_gontran img:hover, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_moisha img:hover, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_tognis img:hover, #barrios_recos .belgrano .flex-container .fotos_contenedor .fotos_amelia img:hover, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_gontran img:hover, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_moisha img:hover, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_tognis img:hover, #barrios_recos .caballito .flex-container .fotos_contenedor .fotos_amelia img:hover, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_gontran img:hover, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_moisha img:hover, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_tognis img:hover, #barrios_recos .palermo .flex-container .fotos_contenedor .fotos_amelia img:hover, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_gontran img:hover, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_moisha img:hover, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_tognis img:hover, #barrios_recos .recoleta .flex-container .fotos_contenedor .fotos_amelia img:hover, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_gontran img:hover, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_moisha img:hover, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_tognis img:hover, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .fotos_amelia img:hover {
+  transform: scale(1.7);
+}
+#barrios_recos .belgrano .flex-container .fotos_contenedor .close, #barrios_recos .caballito .flex-container .fotos_contenedor .close, #barrios_recos .palermo .flex-container .fotos_contenedor .close, #barrios_recos .recoleta .flex-container .fotos_contenedor .close, #barrios_recos .villa-crespo .flex-container .fotos_contenedor .close {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(5, 107, 190);
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  opacity: 0;
+  z-index: 15;
+  position: relative;
+  top: 15px;
+  left: 1580px;
 }/*# sourceMappingURL=lugares_style.css.map */

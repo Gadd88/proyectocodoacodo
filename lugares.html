@@ -41,11 +41,6 @@
       <section id="barrios_recos">
         <section class="belgrano" id="belgrano">
           <h2>Belgrano</h2>
-          <div class="modal_contenedor">
-            <div class="modal_ventana" id="modal_ventana">
-            </div>
-            <button id="close_modal">Cerrar</button>
-          </div>
           <div class="flex-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.395114026294!2d-58.450786050000005!3d-34.55546975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665931963849!5m2!1ses-419!2sar"
@@ -55,7 +50,7 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <article class="gontranCherrier open_modal">
+            <article class="gontranCherrier" id="gontran">
               <div class="card">
                 <h3 class="card-tit">Gontran Cherrier</h3>
                 <p class="card-des">
@@ -64,7 +59,18 @@
                 </p>
               </div>
             </article>
-            <article class="moishaBakery open_modal">
+            <div class="fotos_contenedor">
+              <div class="fotos_gontran" id="fotos_gontran">
+              </div>
+              <div class="fotos_moisha" id="fotos_moisha">
+              </div>
+              <div class="fotos_tognis" id="fotos_tognis">
+              </div>
+              <div class="fotos_amelia" id="fotos_amelia">
+              </div>
+              <button class="close" id="close">X</button>
+            </div>
+            <article class="moishaBakery" id="moisha">
               <div class="card">
                 <h3 class="card-tit">Moisha Bakery</h3>
                 <p class="card-des">
@@ -73,7 +79,7 @@
                 </p>
               </div>
             </article>
-            <article class="tognisCafe open_modal">
+            <article class="tognisCafe" id="tognis">
               <div class="card">
                 <h3 class="card-tit">Tognis Cafe</h3>
                 <p class="card-des">
@@ -95,19 +101,19 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <article class="ameliaCafe open_modal">
+            <article class="ameliaCafe" id="amelia">
               <div class="card">
                 <h3 class="card-tit">Amelia Cafe</h3>
                 <p class="card-des"></p>
               </div>
             </article>
-            <article class="feca open_modal">
+            <article class="feca" id="feca">
               <div class="card">
                 <h3 class="card-tit">Feca</h3>
                 <p class="card-des"></p>
               </div>
             </article>
-            <article class="tauroCafe open_modal">
+            <article class="tauroCafe" id="tauro">
               <div class="card">
                 <h3 class="card-tit">Tauro Cafe</h3>
                 <p class="card-des"></p>

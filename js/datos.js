@@ -19,7 +19,7 @@ let moishaBakery = [
     "<img src=./img/Belgrano/MoishaBakery/7.jpg>",
 ];
 let tognisCafe = [
-    "<img src=./img/Belgrano/TognisCafe/1.jpg>",
+    
     "<img src=./img/Belgrano/TognisCafe/2.jpg>",
     "<img src=./img/Belgrano/TognisCafe/3.jpg>",
     "<img src=./img/Belgrano/TognisCafe/4.jpg>",
