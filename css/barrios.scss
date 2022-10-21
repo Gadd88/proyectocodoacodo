@@ -1,0 +1,153 @@
+.belgrano, .palermo, .caballito, .recoleta, .villa-crespo {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: all 300ms;
+    margin: 150px auto;
+    height: 600px;
+    padding: 25px;
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+      padding: 15px;
+    }
+    .modal_contenedor {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 75%;
+      height: 95%;
+      top: 40px;
+      left: 15%;
+      z-index: -1;
+      .modal_ventana {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.863);
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 15px;
+        padding: 25px;
+        // pointer-events: none;
+        position: fixed;
+        opacity: 0;
+        z-index: -1;
+        // top: 40px;
+        // left: 15%;
+        width: 70%;
+        height: 90%;
+        img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+          transition: all 0.3s ease;
+          border-radius: 15px;
+          border: 3px solid #fff;
+          &:hover {
+            transform: scale(1.7);
+          }
+        }
+        .show {
+          // pointer-events: auto;
+          opacity: 1;
+        }
+      }
+    }
+    .flex-container {
+      display: flex;
+      height: 85%;
+      justify-content: space-around;
+      align-items: center;
+      iframe {
+        border-radius: 15px;
+        border: 2px solid rgba(5, 107, 190, 0.5);
+        height: 95%;
+        filter: grayscale(100%);
+        &:hover {
+          filter: none;
+        }
+      }
+      article {
+        border-radius: 15px;
+        border: 2px solid rgb(153, 3, 120);
+        height: 95%;
+        width: 300px;
+        .card {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          cursor: pointer;
+          .card-tit {
+            background-color: rgba(255, 129, 10, 0.705);
+            height: 30px;
+            width: 100%;
+            text-align: center;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 25px;
+          }
+          .card-des {
+            line-height: 30px;
+            width: 100%;
+            span {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .fotos_contenedor {
+        position: fixed;
+        width: 90%;
+        height: 60%;
+        top: 200px;
+        opacity: 0;
+        z-index: -1;
+        .fotos_gontran,
+        .fotos_moisha,
+        .fotos_tognis,
+        .fotos_amelia, .fotos_feca, .fotos_tauro {
+          display: flex;
+          background-color: rgba(0, 0, 0, 0.863);
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          border-radius: 15px;
+          border: 2px solid #000;
+          padding: 25px;
+          position: fixed;
+          opacity: 0;
+          top: 200px;
+          width: 90%;
+          height: 60%;
+          img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            border: 3px solid #fff;
+            &:hover {
+              transform: scale(1.7);
+            }
+          }
+        }
+        .close {
+          width: 25px;
+          height: 25px;
+          background-color: rgb(5, 107, 190);
+          border-radius: 50%;
+          border: none;
+          color: #fff;
+          opacity: 0;
+          z-index: 15;
+          position: relative;
+          top: 15px;
+          left: 1580px;
+        }
+      }
+    }
+  }

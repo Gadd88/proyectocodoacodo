@@ -12,9 +12,8 @@ body {
   color: #000;
 }
 body header {
-  position: fixed;
+  position: static;
   top: 0px;
-  z-index: 10;
   width: 100%;
   height: 100px;
   background-color: rgb(0, 0, 0);
@@ -95,11 +94,11 @@ body main .recos {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.76);
   border-radius: 15px;
-  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   transition: all 300ms;
   margin: 50px auto;
-  height: 60vh;
+  height: 80vh;
   padding: 25px;
   z-index: -1;
 }
@@ -143,16 +142,28 @@ body main .recos .barrios .recos-barrios-bar .detalles {
   opacity: 0;
   transition: all 0.5s;
 }
-body main .recos .barrios .belgrano, body main .recos .barrios .caballito, body main .recos .barrios .palermo, body main .recos .barrios .recoleta, body main .recos .barrios .villa-crespo {
+body main .recos .barrios .belgrano,
+body main .recos .barrios .caballito,
+body main .recos .barrios .palermo,
+body main .recos .barrios .recoleta,
+body main .recos .barrios .villa-crespo {
   filter: grayscale(100%);
   transition: all 0.1s;
 }
-body main .recos .barrios .belgrano:hover, body main .recos .barrios .caballito:hover, body main .recos .barrios .palermo:hover, body main .recos .barrios .recoleta:hover, body main .recos .barrios .villa-crespo:hover {
+body main .recos .barrios .belgrano:hover,
+body main .recos .barrios .caballito:hover,
+body main .recos .barrios .palermo:hover,
+body main .recos .barrios .recoleta:hover,
+body main .recos .barrios .villa-crespo:hover {
   filter: none;
   border: none;
   cursor: pointer;
 }
-body main .recos .barrios .belgrano:hover .detalles, body main .recos .barrios .caballito:hover .detalles, body main .recos .barrios .palermo:hover .detalles, body main .recos .barrios .recoleta:hover .detalles, body main .recos .barrios .villa-crespo:hover .detalles {
+body main .recos .barrios .belgrano:hover .detalles,
+body main .recos .barrios .caballito:hover .detalles,
+body main .recos .barrios .palermo:hover .detalles,
+body main .recos .barrios .recoleta:hover .detalles,
+body main .recos .barrios .villa-crespo:hover .detalles {
   opacity: 1;
 }
 body main .recos .barrios .belgrano {
@@ -284,8 +295,8 @@ body main #nosotros {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.76);
   border-radius: 15px;
-  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   transition: all 300ms;
   height: 600px;
   line-height: 30px;
@@ -322,16 +333,14 @@ body main #contactanos {
 body main #contactanos #contenedor {
   margin: auto;
   overflow: hidden;
-  width: 35%;
+  width: 600px;
+  min-width: 375px;
   min-height: 200px;
   border-radius: 15px;
-  -moz-border-radius: 15px;
-  -o-border-radius: 15px;
-  -webkit-border-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.76);
-  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   transition: all 300ms;
 }
 body main #contactanos #contenedor h2 {
@@ -342,7 +351,8 @@ body main #contactanos #contenedor h2 {
   text-align: center;
 }
 body main #contactanos #contenedor #formulario {
-  width: 90%;
+  width: 100%;
+  min-width: 375px;
   min-height: 80px;
   margin: auto;
   padding: 20px;
@@ -442,19 +452,133 @@ body .card img:hover {
 }
 
 /*MEDIA QUERIES PARA RESPONSIVE*/
-@media only screen and (max-width: 768px) {
-  input {
+@media only screen and (max-width: 990px) {
+  .recos .barrios {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  #contactanos #contenedor {
+    width: 70%;
+  }
+  #contactanos #contenedor #formulario form input {
     width: 98%;
   }
-  .boton-enviar {
+  #contactanos #contenedor #formulario form .boton-enviar {
     width: 100%;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 990px) {
-  input {
+@media only screen and (max-width: 768px) {
+  header nav img {
+    width: 50px;
+  }
+  header nav .clima_widget {
+    display: none;
+  }
+  header nav .clima_widget #clima {
+    display: none;
+  }
+  header nav .clima_widget .clima_datos {
+    display: none;
+    opacity: 0;
+  }
+  header nav ul {
+    gap: -5px;
+    justify-content: flex-start;
+  }
+  header nav ul .menu-option {
+    font-size: 10px;
+    font-weight: 200;
+  }
+  main {
+    margin: auto;
+  }
+  main .hero {
+    margin-top: 50px;
+    height: 50px;
+  }
+  main .hero h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  main .hero p {
+    font-size: 11px;
+  }
+  main .hero p span {
+    padding: 2px;
+  }
+  main .recos {
+    margin: 20px auto;
+    height: 700px;
+    width: 90%;
+    padding: 10px;
+  }
+  main .recos h3 {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+  }
+  main .recos p {
+    font-size: 13px;
+  }
+  main .recos .barrios {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 300px;
+    width: 100%;
+    margin-top: -5px;
+  }
+  main .recos .barrios .recos-barrios-bar {
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+  }
+  main .recos .barrios .recos-barrios-bar .detalles {
+    padding: 10px;
+    line-height: 15px;
+  }
+  #nosotros {
+    margin: auto;
+    width: 90%;
+    height: 600px;
+  }
+  #nosotros h2 {
+    font-size: 20px;
+    padding: 15px;
+  }
+  #nosotros p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  #nosotros .icons {
+    margin-top: 5px;
+  }
+  #nosotros .icons h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  #nosotros .icons img {
+    width: 100px;
+    height: 100px;
+  }
+  #contactanos #contenedor {
+    width: 400px;
+  }
+  #contactanos #contenedor #formulario {
+    width: 400px;
+  }
+  #contactanos #contenedor #formulario form input {
     width: 98%;
   }
-  .boton-enviar {
+  #contactanos #contenedor #formulario form .boton-enviar {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

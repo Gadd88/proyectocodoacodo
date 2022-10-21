@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recoleta</title>
+    <link rel="shortcut icon" href="./img/icons/mug.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/barrios.css">
+    <script src="https://kit.fontawesome.com/8d8e431bc7.js" crossorigin="anonymous"></script>
+</head>
+<body onload="onLoad()">
+    <header>
+        <nav>
+          <img src="./img/logo.png" width="200" alt="recobar logo" />
+          <ul class="nav-menu">
+            <li class="menu-option"><a href="../index.html">Inicio</a></li>
+            <li class="menu-option"><a href="#">Barrios</a></li>
+            <li class="menu-option"><a href="../index.html#nosotros">Nosotros</a></li>
+            <li class="menu-option"><a href="../index.html#contactanos">Contacto</a></li>
+          </ul>
+          <div class="clima_widget">
+            <i class="fa-solid fa-cloud-sun" id="clima"></i>
+            <ul class="clima_datos">
+              <li id="location"></li>
+              <li id="temp"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="container_back-triangle">
+          <div class="triangle triangle1"></div>
+          <div class="triangle triangle2"></div>
+          <div class="triangle triangle3"></div>
+        </div>
+        <section class="recoleta" id="recoleta">
+          <h2>Recoleta</h2>
+          <div class="flex-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13139.057618551244!2d-58.405119063576535!3d-34.58482738589492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932124584!5m2!1ses-419!2sar"
+              width="300"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <article class="edisonCafe">
+              <div class="card">
+                <h3 class="card-tit">Edison Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="magnoliasCafe">
+              <div class="card">
+                <h3 class="card-tit">Magnolia Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+            <article class="pani">
+              <div class="card">
+                <h3 class="card-tit">Pani Cafe</h3>
+                <p class="card-des"></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </main>
+      <footer>
+
+      </footer>
+      <script src="/js/datos.js"></script>
+      <script src="/js/main.js"></script>
+</body>
+</html>
