@@ -75,6 +75,21 @@ formulario.addEventListener('submit', e => {
 })
 
 
+/**************************************************Menu******************** */
+
+// let menu = document.getElementsByClassName('desplegable')[0];
+// let barrios = document.getElementById('barrios');
+
+
+// menu.addEventListener('mouseover', e => {
+//   e.preventDefault()
+//   barrios.style.display = 'flex';
+// })
+
+// menu.addEventListener('mouseout', e => {
+//   e.preventDefault()
+//   barrios.style.display = 'none'
+// })
 
 
 

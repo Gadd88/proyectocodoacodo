@@ -55,42 +55,69 @@ body header nav ul {
   gap: 50px;
   justify-content: space-between;
 }
-body header nav ul .menu-option {
+body header nav ul .desplegable:hover .barrios {
+  display: flex;
+}
+body header nav ul .barrios {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 15px;
+  background-color: rgb(228, 228, 228);
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+body header nav ul .barrios .barrio-opt {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+}
+body header nav ul .barrios .barrio-opt:hover {
+  background-color: rgb(228, 228, 228);
+}
+body header nav ul .barrios .barrio-opt:hover a {
+  color: #000;
+  text-decoration: underline;
+}
+body header nav .menu-option {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
 }
-body header nav ul .menu-option a {
+body header nav .menu-option a {
   text-decoration: none;
   transition: all 0.3s ease;
   color: #fff;
 }
-body header nav ul .menu-option a:hover {
+body header nav .menu-option a:hover {
   text-decoration: underline;
 }
-body main {
+
+main {
   margin: 50px;
 }
-body main .hero {
+main .hero {
   margin-top: 150px;
   text-align: center;
   height: 150px;
 }
-body main .hero h1 {
+main .hero h1 {
   font-size: 50px;
   margin-bottom: 35px;
 }
-body main .hero p {
+main .hero p {
   font-size: 25px;
 }
-body main .hero p span {
+main .hero p span {
   background-color: rgba(9, 145, 199, 0.7);
   border-radius: 10px;
   color: #fff;
   letter-spacing: 2px;
   padding: 5px;
 }
-body main .recos {
+main .recos {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.76);
   border-radius: 15px;
@@ -102,21 +129,21 @@ body main .recos {
   padding: 25px;
   z-index: -1;
 }
-body main .recos h3 {
+main .recos h3 {
   margin-bottom: 25px;
   letter-spacing: 2px;
   text-decoration: underline;
 }
-body main .recos p {
+main .recos p {
   font-size: 20px;
   padding-bottom: 25px;
 }
-body main .recos .barrios {
+main .recos .barrios {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
 }
-body main .recos .barrios .recos-barrios-bar {
+main .recos .barrios .recos-barrios-bar {
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 20px;
@@ -125,15 +152,15 @@ body main .recos .barrios .recos-barrios-bar {
   min-width: 200px;
   height: 350px;
 }
-body main .recos .barrios .recos-barrios-bar h3 {
+main .recos .barrios .recos-barrios-bar h3 {
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: rgb(121, 5, 82);
 }
-body main .recos .barrios .recos-barrios-bar h3 a {
+main .recos .barrios .recos-barrios-bar h3 a {
   color: rgb(255, 255, 255);
 }
-body main .recos .barrios .recos-barrios-bar .detalles {
+main .recos .barrios .recos-barrios-bar .detalles {
   background-color: rgba(121, 5, 82, 0.7);
   color: rgb(228, 228, 228);
   width: 100%;
@@ -142,51 +169,51 @@ body main .recos .barrios .recos-barrios-bar .detalles {
   opacity: 0;
   transition: all 0.5s;
 }
-body main .recos .barrios .belgrano,
-body main .recos .barrios .caballito,
-body main .recos .barrios .palermo,
-body main .recos .barrios .recoleta,
-body main .recos .barrios .villa-crespo {
+main .recos .barrios .belgrano,
+main .recos .barrios .caballito,
+main .recos .barrios .palermo,
+main .recos .barrios .recoleta,
+main .recos .barrios .villa-crespo {
   filter: grayscale(100%);
   transition: all 0.1s;
 }
-body main .recos .barrios .belgrano:hover,
-body main .recos .barrios .caballito:hover,
-body main .recos .barrios .palermo:hover,
-body main .recos .barrios .recoleta:hover,
-body main .recos .barrios .villa-crespo:hover {
+main .recos .barrios .belgrano:hover,
+main .recos .barrios .caballito:hover,
+main .recos .barrios .palermo:hover,
+main .recos .barrios .recoleta:hover,
+main .recos .barrios .villa-crespo:hover {
   filter: none;
   border: none;
   cursor: pointer;
 }
-body main .recos .barrios .belgrano:hover .detalles,
-body main .recos .barrios .caballito:hover .detalles,
-body main .recos .barrios .palermo:hover .detalles,
-body main .recos .barrios .recoleta:hover .detalles,
-body main .recos .barrios .villa-crespo:hover .detalles {
+main .recos .barrios .belgrano:hover .detalles,
+main .recos .barrios .caballito:hover .detalles,
+main .recos .barrios .palermo:hover .detalles,
+main .recos .barrios .recoleta:hover .detalles,
+main .recos .barrios .villa-crespo:hover .detalles {
   opacity: 1;
 }
-body main .recos .barrios .belgrano {
+main .recos .barrios .belgrano {
   background: url("../img/Belgrano/GontranCherrier/3.jpg") no-repeat;
   background-size: cover;
 }
-body main .recos .barrios .caballito {
+main .recos .barrios .caballito {
   background: url("../img/Caballito/AmeliaCafe/1.jpg") no-repeat;
   background-size: cover;
 }
-body main .recos .barrios .palermo {
+main .recos .barrios .palermo {
   background: url("../img/Palermo/ElPatio/2.jpg") no-repeat;
   background-size: cover;
 }
-body main .recos .barrios .recoleta {
+main .recos .barrios .recoleta {
   background: url("../img/recoleta/EdisonCafe/5.jpg") no-repeat;
   background-size: cover;
 }
-body main .recos .barrios .villa-crespo {
+main .recos .barrios .villa-crespo {
   background: url("../img/VillaCrespo/PetitBouquet/4.jpg") no-repeat;
   background-size: cover;
 }
-body main .container_back-triangle {
+main .container_back-triangle {
   max-width: 1200px;
   height: 600px;
   margin: auto;
@@ -196,13 +223,13 @@ body main .container_back-triangle {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-body main .container_back-triangle .triangle {
+main .container_back-triangle .triangle {
   width: 300px;
   height: 300px;
   position: fixed;
   opacity: 0.5;
 }
-body main .container_back-triangle .triangle1 {
+main .container_back-triangle .triangle1 {
   background: linear-gradient(to left, #0ea1e6, #1e67c7);
   right: 100px;
   top: 100px;
@@ -211,7 +238,7 @@ body main .container_back-triangle .triangle1 {
   -webkit-animation: t1 5s ease infinite;
           animation: t1 5s ease infinite;
 }
-body main .container_back-triangle .triangle2 {
+main .container_back-triangle .triangle2 {
   background: linear-gradient(to left, #ee8105, #c7371e);
   top: 350px;
   width: 200px;
@@ -219,7 +246,7 @@ body main .container_back-triangle .triangle2 {
   -webkit-animation: t2 9s ease infinite;
           animation: t2 9s ease infinite;
 }
-body main .container_back-triangle .triangle3 {
+main .container_back-triangle .triangle3 {
   background: linear-gradient(to left, #1b8fc5, #df0f8f);
   left: 200px;
   -webkit-animation: t3 10s ease infinite;
@@ -291,7 +318,7 @@ body main .container_back-triangle .triangle3 {
     transform: rotate(45deg) translateY(0px);
   }
 }
-body main #nosotros {
+main #nosotros {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.76);
   border-radius: 15px;
@@ -301,13 +328,13 @@ body main #nosotros {
   height: 600px;
   line-height: 30px;
 }
-body main #nosotros h2 {
+main #nosotros h2 {
   font-size: 40px;
   padding: 25px;
   color: #000;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-body main #nosotros p {
+main #nosotros p {
   font-size: 20px;
   line-height: 50px;
   text-align: center;
@@ -315,22 +342,22 @@ body main #nosotros p {
   width: 70%;
   margin: auto;
 }
-body main #nosotros .icons {
+main #nosotros .icons {
   margin-top: 5px;
 }
-body main #nosotros .icons h4 {
+main #nosotros .icons h4 {
   font-size: 20px;
   margin-bottom: 25px;
 }
-body main #nosotros .icons img {
+main #nosotros .icons img {
   width: 100px;
   height: 100px;
 }
-body main #contactanos {
+main #contactanos {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-body main #contactanos #contenedor {
+main #contactanos #contenedor {
   margin: auto;
   overflow: hidden;
   width: 600px;
@@ -343,14 +370,14 @@ body main #contactanos #contenedor {
           backdrop-filter: blur(5px);
   transition: all 300ms;
 }
-body main #contactanos #contenedor h2 {
+main #contactanos #contenedor h2 {
   color: #000;
   font-size: 22px;
   padding: 15px 0 10px 10px;
   border-bottom: 1px solid #fff;
   text-align: center;
 }
-body main #contactanos #contenedor #formulario {
+main #contactanos #contenedor #formulario {
   width: 100%;
   min-width: 375px;
   min-height: 80px;
@@ -358,13 +385,13 @@ body main #contactanos #contenedor #formulario {
   padding: 20px;
   margin-top: 20px;
 }
-body main #contactanos #contenedor #formulario form {
+main #contactanos #contenedor #formulario form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body main #contactanos #contenedor #formulario form input {
+main #contactanos #contenedor #formulario form input {
   height: 40px;
   border-radius: 15px;
   text-align: center;
@@ -375,22 +402,22 @@ body main #contactanos #contenedor #formulario form input {
   background-color: rgba(10, 170, 233, 0.4588235294);
   outline: none;
 }
-body main #contactanos #contenedor #formulario form input::-moz-placeholder {
+main #contactanos #contenedor #formulario form input::-moz-placeholder {
   color: #000;
   font-weight: 600;
   letter-spacing: 2px;
 }
-body main #contactanos #contenedor #formulario form input:-ms-input-placeholder {
+main #contactanos #contenedor #formulario form input:-ms-input-placeholder {
   color: #000;
   font-weight: 600;
   letter-spacing: 2px;
 }
-body main #contactanos #contenedor #formulario form input::placeholder {
+main #contactanos #contenedor #formulario form input::placeholder {
   color: #000;
   font-weight: 600;
   letter-spacing: 2px;
 }
-body main #contactanos #contenedor #formulario form textarea {
+main #contactanos #contenedor #formulario form textarea {
   width: 80%;
   border-radius: 15px;
   padding: 15px;
@@ -399,22 +426,22 @@ body main #contactanos #contenedor #formulario form textarea {
   background-color: rgba(109, 109, 109, 0.712);
   resize: none;
 }
-body main #contactanos #contenedor #formulario form textarea::-moz-placeholder {
+main #contactanos #contenedor #formulario form textarea::-moz-placeholder {
   color: #000;
   font-weight: 600;
   letter-spacing: 2px;
 }
-body main #contactanos #contenedor #formulario form textarea:-ms-input-placeholder {
+main #contactanos #contenedor #formulario form textarea:-ms-input-placeholder {
   color: #000;
   font-weight: 600;
   letter-spacing: 2px;
 }
-body main #contactanos #contenedor #formulario form textarea::placeholder {
+main #contactanos #contenedor #formulario form textarea::placeholder {
   color: #000;
   font-weight: 600;
   letter-spacing: 2px;
 }
-body main #contactanos #contenedor #formulario form .boton-enviar {
+main #contactanos #contenedor #formulario form .boton-enviar {
   padding: 5px;
   width: 50%;
   border: 0;
@@ -427,27 +454,29 @@ body main #contactanos #contenedor #formulario form .boton-enviar {
   font-weight: bold;
   cursor: pointer;
 }
-body main #contactanos #contenedor #formulario form .boton-enviar:hover {
+main #contactanos #contenedor #formulario form .boton-enviar:hover {
   background-color: #35a6ee;
 }
-body footer {
+
+footer {
   text-align: center;
 }
-body footer h4 {
+footer h4 {
   margin-bottom: 20px;
 }
-body .card {
+
+.card {
   display: flex;
   justify-content: center;
 }
-body .card img {
+.card img {
   width: 250px;
   height: 200px;
   border-radius: 10px;
   border: 1px solid transparent;
   transition: all 0.3s ease;
 }
-body .card img:hover {
+.card img:hover {
   transform: scale(1.2);
 }
 
