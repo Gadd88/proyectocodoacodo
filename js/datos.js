@@ -41,7 +41,6 @@ let ameliaCafe = [
     "<img src=/img/Caballito/AmeliaCafe/7.jpg>",
 ];
 let feca = [
-    "<img src=/img/Caballito/Feca/1.jpg>",
     "<img src=/img/Caballito/Feca/2.jpg>",
     "<img src=/img/Caballito/Feca/3.jpg>",
     "<img src=/img/Caballito/Feca/4.jpg>",
