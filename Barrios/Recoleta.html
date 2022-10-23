@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recoleta</title>
-    <link rel="shortcut icon" href="./img/icons/mug.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/barrios.css">
+    <link rel="shortcut icon" href="../img/icons/mug.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/barrios.css">
     <script src="https://kit.fontawesome.com/8d8e431bc7.js" crossorigin="anonymous"></script>
 </head>
 <body onload="onLoad()">
@@ -18,11 +18,11 @@
             <li class="menu-option"><a href="../index.html">Inicio</a></li>
             <li class="menu-option desplegable" id="desplegable"><a href="#">Barrios</a>
               <ul class="barrios">
-                <li class="barrio-opt"><a href="/Barrios/Belgrano.html">Belgrano</a></li>
-                <li class="barrio-opt"><a href="/Barrios/Caballito.html">Caballito</a></li>
-                <li class="barrio-opt"><a href="/Barrios/Recoleta.html">Recoleta</a></li>
-                <li class="barrio-opt"><a href="/Barrios/Palermo.html">Palermo</a></li>
-                <li class="barrio-opt"><a href="/Barrios/VillaCrespo.html">Villa Crespo</a></li>
+                <li class="barrio-opt"><a href="../Barrios/Belgrano.html">Belgrano</a></li>
+                <li class="barrio-opt"><a href="../Barrios/Caballito.html">Caballito</a></li>
+                <li class="barrio-opt"><a href="../Barrios/Recoleta.html">Recoleta</a></li>
+                <li class="barrio-opt"><a href="../Barrios/Palermo.html">Palermo</a></li>
+                <li class="barrio-opt"><a href="../Barrios/VillaCrespo.html">Villa Crespo</a></li>
               </ul>
             </li>
             <li class="menu-option"><a href="../index.html#nosotros">Nosotros</a></li>
@@ -44,43 +44,131 @@
           <div class="triangle triangle2"></div>
           <div class="triangle triangle3"></div>
         </div>
+
         <section class="recoleta" id="recoleta">
           <h2>Recoleta</h2>
           <div class="flex-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13139.057618551244!2d-58.405119063576535!3d-34.58482738589492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1665932124584!5m2!1ses-419!2sar"
-              width="300"
-              height="300"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
             <article class="edisonCafe">
               <div class="card">
                 <h3 class="card-tit">Edison Cafe</h3>
-                <p class="card-des"></p>
+                <p class="card-des">
+                  <span>Dirección:</span> <strong>Ayacucho 1643
+                  </strong> <br />
+                  Descripcion
+                <br>
+                <span>Horarios:</span> 
+                <div id="horarios">                
+                 <li>Lunes</li>
+                 <li>Martes</li>
+                 <li>Miercoles</li>
+                 <li>Jueves</li>
+                 <li>Viernes</li>
+                 <li>Sabado</li>
+                 <li>Domingo</li>
+                 <li>8:00–20:00</li>
+                 <li>8:00–20:00</li>
+                 <li>8:00–20:00</li>
+                 <li>8:00–20:00</li>
+                 <li>8:00–20:00</li>
+                 <li>8:00–20:00</li>
+                 <li>8:00–20:00</li>
+                </div>
+              </p>
               </div>
             </article>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5359741436687!2d-58.39461188489265!3d-34.59060608046283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1ed4163209%3A0xe3b1f3c3472df640!2sEdison%20Caf%C3%A9!5e0!3m2!1ses-419!2sar!4v1666524157228!5m2!1ses-419!2sar"
+            width="300"
+            height="300"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="flex-container">
             <article class="magnoliasCafe">
               <div class="card">
-                <h3 class="card-tit">Magnolia Cafe</h3>
-                <p class="card-des"></p>
+                <h3 class="card-tit">Magnolia Cakes</h3>
+                <p class="card-des">
+                  <span>Dirección:</span>
+                  <strong>Junín 1487</strong> <br />
+                  Descripcion
+                <br>
+                <span>Horarios:</span> 
+                <div id="horarios">                
+                 <li>Lunes</li>
+                 <li>Martes</li>
+                 <li>Miercoles</li>
+                 <li>Jueves</li>
+                 <li>Viernes</li>
+                 <li>Sabado</li>
+                 <li>Domingo</li>
+                 <li>9:00–19:30</li>
+                 <li>9:00–19:30</li>
+                 <li>9:00–19:30</li>
+                 <li>9:00–19:30</li>
+                 <li>9:00–19:30</li>
+                 <li>10:00–20:00</li>
+                 <li>10:00–20:00</li>
+                </div>
+              </p>
               </div>
             </article>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.512135764415!2d-58.397239184892626!3d-34.59120908046268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb68e6e78be7%3A0xb9a7245ecdc2101c!2sMagnolia&#39;s%20Cakes!5e0!3m2!1ses-419!2sar!4v1666524306564!5m2!1ses-419!2sar"
+            width="300"
+            height="300"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          </div>
+
+          <div class="flex-container">
             <article class="pani">
               <div class="card">
                 <h3 class="card-tit">Pani Cafe</h3>
-                <p class="card-des"></p>
+                <p class="card-des">
+                  <span>Dirección:</span> <strong>Vicente López 2056</strong>
+                  <br />
+                  Descripcion
+                <br>
+                <span>Horarios:</span> 
+                <div id="horarios">                
+                 <li>Lunes</li>
+                 <li>Martes</li>
+                 <li>Miercoles</li>
+                 <li>Jueves</li>
+                 <li>Viernes</li>
+                 <li>Sabado</li>
+                 <li>Domingo</li>
+                 <li>10:00–23:00</li>
+                 <li>10:00–23:00</li>
+                 <li>10:00–23:00</li>
+                 <li>10:00–00:00</li>
+                 <li>10:00–00:00</li>
+                 <li>10:00–00:00</li>
+                 <li>10:00–23:00</li>
+                </div>
+              </p>
               </div>
             </article>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.591010551086!2d-58.39582478489268!3d-34.589213880463085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf155dafe7%3A0x206396c1d73e800!2sPANI%20Recoleta!5e0!3m2!1ses-419!2sar!4v1666524381526!5m2!1ses-419!2sar"
+            width="300"
+            height="300"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
           </div>
         </section>
 
       </main>
-      <footer>
+      <footer></footer>
 
-      </footer>
-      <script src="/js/datos.js"></script>
-      <script src="/js/main.js"></script>
+      <script src="../js/datos.js"></script>
+      <script src="../js/main.js"></script>
 </body>
 </html>
