@@ -128,6 +128,7 @@ body {
       height: 90vh;
       padding: 25px;
       z-index: -1;
+      overflow-y: auto;
       h3 {
         margin-bottom: 25px;
         letter-spacing: 2px;
@@ -152,13 +153,13 @@ body {
           h3 {
             text-align: center;
             color: rgb(255, 255, 255);
-            background-color: rgb(121, 5, 82);
+            background-color: #c06312;
             a {
               color: rgb(255, 255, 255);
             }
           }
           .detalles {
-            background-color: rgba(121, 5, 82, 0.7);
+            background-color: #c06312;
             color: rgb(228, 228, 228);
             width: 100%;
             padding: 10px;
@@ -221,7 +222,7 @@ body {
         opacity: 0.5;
       }
       .triangle1 {
-        background: linear-gradient(to left, #0ea1e6, #1e67c7);
+        background: linear-gradient(to left, #a25c6e, #d4b4dc);
         right: 100px;
         top: 100px;
         width: 250px;
@@ -236,7 +237,7 @@ body {
         animation: t2 9s ease infinite;
       }
       .triangle3 {
-        background: linear-gradient(to left, #1b8fc5, #df0f8f);
+        background: linear-gradient(to left, #d4b4dc, #ad6d2f);
         left: 200px;
         animation: t3 10s ease infinite;
       }
@@ -267,7 +268,7 @@ body {
           transform: rotate(45deg) translateY(0px);
         }
         50% {
-          transform: rotate(45deg) translateY(50px) translateX(-15px);
+          transform: rotate(75deg) translateY(-50px) translateX(-50px);
         }
         100% {
           transform: rotate(45deg) translateY(0px);

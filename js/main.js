@@ -20,7 +20,7 @@ const setWeatherData = (data) => {
   // console.log(data);
   const weatherData = {
     location: data.name,
-    temp: data.main.temp,
+    temp: `${data.main.temp} °C`,
     description: data.weather[0].main,
   };
   Object.keys(weatherData).forEach((key) => {

@@ -6,7 +6,7 @@
           backdrop-filter: blur(5px);
   transition: all 300ms;
   margin: 150px auto;
-  height: 500px;
+  height: 100%;
   padding: 25px;
 }
 .belgrano h2, .palermo h2, .caballito h2, .recoleta h2, .villa-crespo h2 {
@@ -14,57 +14,22 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
   padding: 15px;
 }
-.belgrano .modal_contenedor, .palermo .modal_contenedor, .caballito .modal_contenedor, .recoleta .modal_contenedor, .villa-crespo .modal_contenedor {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  width: 75%;
-  height: 95%;
-  top: 40px;
-  left: 15%;
-  z-index: -1;
-}
-.belgrano .modal_contenedor .modal_ventana, .palermo .modal_contenedor .modal_ventana, .caballito .modal_contenedor .modal_ventana, .recoleta .modal_contenedor .modal_ventana, .villa-crespo .modal_contenedor .modal_ventana {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.863);
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 15px;
-  padding: 25px;
-  position: fixed;
-  opacity: 0;
-  z-index: -1;
-  width: 70%;
-  height: 90%;
-}
-.belgrano .modal_contenedor .modal_ventana img, .palermo .modal_contenedor .modal_ventana img, .caballito .modal_contenedor .modal_ventana img, .recoleta .modal_contenedor .modal_ventana img, .villa-crespo .modal_contenedor .modal_ventana img {
-  width: 200px;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: all 0.3s ease;
-  border-radius: 15px;
-  border: 3px solid #fff;
-}
-.belgrano .modal_contenedor .modal_ventana img:hover, .palermo .modal_contenedor .modal_ventana img:hover, .caballito .modal_contenedor .modal_ventana img:hover, .recoleta .modal_contenedor .modal_ventana img:hover, .villa-crespo .modal_contenedor .modal_ventana img:hover {
-  transform: scale(1.7);
-}
-.belgrano .modal_contenedor .modal_ventana .show, .palermo .modal_contenedor .modal_ventana .show, .caballito .modal_contenedor .modal_ventana .show, .recoleta .modal_contenedor .modal_ventana .show, .villa-crespo .modal_contenedor .modal_ventana .show {
-  opacity: 1;
-}
 .belgrano .flex-container, .palermo .flex-container, .caballito .flex-container, .recoleta .flex-container, .villa-crespo .flex-container {
   display: flex;
   height: 85%;
   justify-content: space-around;
   align-items: center;
 }
+.belgrano .flex-container ::-webkit-scrollbar, .palermo .flex-container ::-webkit-scrollbar, .caballito .flex-container ::-webkit-scrollbar, .recoleta .flex-container ::-webkit-scrollbar, .villa-crespo .flex-container ::-webkit-scrollbar {
+  display: none;
+}
 .belgrano .flex-container article, .palermo .flex-container article, .caballito .flex-container article, .recoleta .flex-container article, .villa-crespo .flex-container article {
   border-radius: 15px;
-  border: 2px solid rgb(153, 3, 120);
+  border: 2px solid rgb(87, 25, 1);
   height: 95%;
   width: 70%;
+  overflow: auto;
+  margin: 20px;
 }
 .belgrano .flex-container article .card, .palermo .flex-container article .card, .caballito .flex-container article .card, .recoleta .flex-container article .card, .villa-crespo .flex-container article .card {
   width: 100%;
@@ -72,7 +37,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  cursor: pointer;
 }
 .belgrano .flex-container article .card .card-tit, .palermo .flex-container article .card .card-tit, .caballito .flex-container article .card .card-tit, .recoleta .flex-container article .card .card-tit, .villa-crespo .flex-container article .card .card-tit {
   background-color: rgba(255, 129, 10, 0.705);
@@ -105,104 +69,33 @@
 .belgrano .flex-container article .card #horarios span, .palermo .flex-container article .card #horarios span, .caballito .flex-container article .card #horarios span, .recoleta .flex-container article .card #horarios span, .villa-crespo .flex-container article .card #horarios span {
   text-decoration: underline;
 }
-.belgrano .flex-container .fotos_contenedor, .palermo .flex-container .fotos_contenedor, .caballito .flex-container .fotos_contenedor, .recoleta .flex-container .fotos_contenedor, .villa-crespo .flex-container .fotos_contenedor {
-  position: fixed;
-  width: 90%;
-  height: 60%;
-  top: 200px;
-  opacity: 0;
-  z-index: -1;
-}
-.belgrano .flex-container .fotos_contenedor .fotos_gontran,
-.belgrano .flex-container .fotos_contenedor .fotos_moisha,
-.belgrano .flex-container .fotos_contenedor .fotos_tognis,
-.belgrano .flex-container .fotos_contenedor .fotos_amelia, .belgrano .flex-container .fotos_contenedor .fotos_feca, .belgrano .flex-container .fotos_contenedor .fotos_tauro, .palermo .flex-container .fotos_contenedor .fotos_gontran,
-.palermo .flex-container .fotos_contenedor .fotos_moisha,
-.palermo .flex-container .fotos_contenedor .fotos_tognis,
-.palermo .flex-container .fotos_contenedor .fotos_amelia, .palermo .flex-container .fotos_contenedor .fotos_feca, .palermo .flex-container .fotos_contenedor .fotos_tauro, .caballito .flex-container .fotos_contenedor .fotos_gontran,
-.caballito .flex-container .fotos_contenedor .fotos_moisha,
-.caballito .flex-container .fotos_contenedor .fotos_tognis,
-.caballito .flex-container .fotos_contenedor .fotos_amelia, .caballito .flex-container .fotos_contenedor .fotos_feca, .caballito .flex-container .fotos_contenedor .fotos_tauro, .recoleta .flex-container .fotos_contenedor .fotos_gontran,
-.recoleta .flex-container .fotos_contenedor .fotos_moisha,
-.recoleta .flex-container .fotos_contenedor .fotos_tognis,
-.recoleta .flex-container .fotos_contenedor .fotos_amelia, .recoleta .flex-container .fotos_contenedor .fotos_feca, .recoleta .flex-container .fotos_contenedor .fotos_tauro, .villa-crespo .flex-container .fotos_contenedor .fotos_gontran,
-.villa-crespo .flex-container .fotos_contenedor .fotos_moisha,
-.villa-crespo .flex-container .fotos_contenedor .fotos_tognis,
-.villa-crespo .flex-container .fotos_contenedor .fotos_amelia, .villa-crespo .flex-container .fotos_contenedor .fotos_feca, .villa-crespo .flex-container .fotos_contenedor .fotos_tauro {
+.belgrano .flex-container article .fotos_cafe, .palermo .flex-container article .fotos_cafe, .caballito .flex-container article .fotos_cafe, .recoleta .flex-container article .fotos_cafe, .villa-crespo .flex-container article .fotos_cafe {
+  border-top: 2px solid #fc7d15;
+  padding: 30px 20px;
+  margin: 10px;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.863);
-  align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   border-radius: 15px;
-  border: 2px solid #000;
-  padding: 25px;
-  position: fixed;
-  opacity: 0;
-  top: 200px;
-  width: 90%;
-  height: 60%;
+  overflow-x: auto;
 }
-.belgrano .flex-container .fotos_contenedor .fotos_gontran img,
-.belgrano .flex-container .fotos_contenedor .fotos_moisha img,
-.belgrano .flex-container .fotos_contenedor .fotos_tognis img,
-.belgrano .flex-container .fotos_contenedor .fotos_amelia img, .belgrano .flex-container .fotos_contenedor .fotos_feca img, .belgrano .flex-container .fotos_contenedor .fotos_tauro img, .palermo .flex-container .fotos_contenedor .fotos_gontran img,
-.palermo .flex-container .fotos_contenedor .fotos_moisha img,
-.palermo .flex-container .fotos_contenedor .fotos_tognis img,
-.palermo .flex-container .fotos_contenedor .fotos_amelia img, .palermo .flex-container .fotos_contenedor .fotos_feca img, .palermo .flex-container .fotos_contenedor .fotos_tauro img, .caballito .flex-container .fotos_contenedor .fotos_gontran img,
-.caballito .flex-container .fotos_contenedor .fotos_moisha img,
-.caballito .flex-container .fotos_contenedor .fotos_tognis img,
-.caballito .flex-container .fotos_contenedor .fotos_amelia img, .caballito .flex-container .fotos_contenedor .fotos_feca img, .caballito .flex-container .fotos_contenedor .fotos_tauro img, .recoleta .flex-container .fotos_contenedor .fotos_gontran img,
-.recoleta .flex-container .fotos_contenedor .fotos_moisha img,
-.recoleta .flex-container .fotos_contenedor .fotos_tognis img,
-.recoleta .flex-container .fotos_contenedor .fotos_amelia img, .recoleta .flex-container .fotos_contenedor .fotos_feca img, .recoleta .flex-container .fotos_contenedor .fotos_tauro img, .villa-crespo .flex-container .fotos_contenedor .fotos_gontran img,
-.villa-crespo .flex-container .fotos_contenedor .fotos_moisha img,
-.villa-crespo .flex-container .fotos_contenedor .fotos_tognis img,
-.villa-crespo .flex-container .fotos_contenedor .fotos_amelia img, .villa-crespo .flex-container .fotos_contenedor .fotos_feca img, .villa-crespo .flex-container .fotos_contenedor .fotos_tauro img {
+.belgrano .flex-container article .fotos_cafe img, .palermo .flex-container article .fotos_cafe img, .caballito .flex-container article .fotos_cafe img, .recoleta .flex-container article .fotos_cafe img, .villa-crespo .flex-container article .fotos_cafe img {
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.25s ease;
   border-radius: 15px;
-  border: 3px solid #fff;
+  border: 3px solid rgb(90, 59, 0);
 }
-.belgrano .flex-container .fotos_contenedor .fotos_gontran img:hover,
-.belgrano .flex-container .fotos_contenedor .fotos_moisha img:hover,
-.belgrano .flex-container .fotos_contenedor .fotos_tognis img:hover,
-.belgrano .flex-container .fotos_contenedor .fotos_amelia img:hover, .belgrano .flex-container .fotos_contenedor .fotos_feca img:hover, .belgrano .flex-container .fotos_contenedor .fotos_tauro img:hover, .palermo .flex-container .fotos_contenedor .fotos_gontran img:hover,
-.palermo .flex-container .fotos_contenedor .fotos_moisha img:hover,
-.palermo .flex-container .fotos_contenedor .fotos_tognis img:hover,
-.palermo .flex-container .fotos_contenedor .fotos_amelia img:hover, .palermo .flex-container .fotos_contenedor .fotos_feca img:hover, .palermo .flex-container .fotos_contenedor .fotos_tauro img:hover, .caballito .flex-container .fotos_contenedor .fotos_gontran img:hover,
-.caballito .flex-container .fotos_contenedor .fotos_moisha img:hover,
-.caballito .flex-container .fotos_contenedor .fotos_tognis img:hover,
-.caballito .flex-container .fotos_contenedor .fotos_amelia img:hover, .caballito .flex-container .fotos_contenedor .fotos_feca img:hover, .caballito .flex-container .fotos_contenedor .fotos_tauro img:hover, .recoleta .flex-container .fotos_contenedor .fotos_gontran img:hover,
-.recoleta .flex-container .fotos_contenedor .fotos_moisha img:hover,
-.recoleta .flex-container .fotos_contenedor .fotos_tognis img:hover,
-.recoleta .flex-container .fotos_contenedor .fotos_amelia img:hover, .recoleta .flex-container .fotos_contenedor .fotos_feca img:hover, .recoleta .flex-container .fotos_contenedor .fotos_tauro img:hover, .villa-crespo .flex-container .fotos_contenedor .fotos_gontran img:hover,
-.villa-crespo .flex-container .fotos_contenedor .fotos_moisha img:hover,
-.villa-crespo .flex-container .fotos_contenedor .fotos_tognis img:hover,
-.villa-crespo .flex-container .fotos_contenedor .fotos_amelia img:hover, .villa-crespo .flex-container .fotos_contenedor .fotos_feca img:hover, .villa-crespo .flex-container .fotos_contenedor .fotos_tauro img:hover {
-  transform: scale(1.7);
-}
-.belgrano .flex-container .fotos_contenedor .close, .palermo .flex-container .fotos_contenedor .close, .caballito .flex-container .fotos_contenedor .close, .recoleta .flex-container .fotos_contenedor .close, .villa-crespo .flex-container .fotos_contenedor .close {
-  width: 25px;
-  height: 25px;
-  background-color: rgb(5, 107, 190);
-  border-radius: 50%;
-  border: none;
-  color: #fff;
-  opacity: 0;
-  z-index: 15;
-  position: relative;
-  top: 15px;
-  left: 1580px;
+.belgrano .flex-container article .fotos_cafe img:hover, .palermo .flex-container article .fotos_cafe img:hover, .caballito .flex-container article .fotos_cafe img:hover, .recoleta .flex-container article .fotos_cafe img:hover, .villa-crespo .flex-container article .fotos_cafe img:hover {
+  transform: scale(1.2);
 }
 .belgrano .flex-container iframe, .palermo .flex-container iframe, .caballito .flex-container iframe, .recoleta .flex-container iframe, .villa-crespo .flex-container iframe {
   border-radius: 15px;
+  margin: 20px;
   border: 2px solid rgba(5, 107, 190, 0.5);
-  height: 95%;
+  height: 550px;
   filter: grayscale(100%);
 }
 .belgrano .flex-container iframe:hover, .palermo .flex-container iframe:hover, .caballito .flex-container iframe:hover, .recoleta .flex-container iframe:hover, .villa-crespo .flex-container iframe:hover {

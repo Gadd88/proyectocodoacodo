@@ -30,3 +30,17 @@ carrusel.addEventListener("mouseout", () => {
 });
 
 start();
+
+
+
+
+
+// querySelectorAll
+// for(const elem of open){
+//   elem.addEventListener('click', () => {
+//     modal_ventana.style.opacity = 1
+//     modal_ventana.style.zIndex = 10;
+//     modal_contenedor.style.zIndex = 12;
+//     close.style.opacity = 1;
+//   });
+// }
