@@ -120,6 +120,11 @@
   body .belgrano .flex-container article, body .palermo .flex-container article, body .caballito .flex-container article, body .recoleta .flex-container article, body .villa-crespo .flex-container article {
     width: 70%;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    scroll-padding: 10px;
   }
   body .belgrano .flex-container article .card, body .palermo .flex-container article .card, body .caballito .flex-container article .card, body .recoleta .flex-container article .card, body .villa-crespo .flex-container article .card {
     width: 100%;
@@ -132,6 +137,7 @@
     margin: auto;
   }
   body .belgrano .flex-container article .fotos_cafe, body .palermo .flex-container article .fotos_cafe, body .caballito .flex-container article .fotos_cafe, body .recoleta .flex-container article .fotos_cafe, body .villa-crespo .flex-container article .fotos_cafe {
+    padding: 20px;
     scroll-snap-align: start;
     padding: 10px;
     flex: 0 0 100%;
