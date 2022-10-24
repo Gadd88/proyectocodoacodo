@@ -52,6 +52,8 @@ formulario.addEventListener('submit', e => {
 
   let regexTel = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
 
+  error.innerHTML = ""
+
   if(nombre.value.length < 6){
     warnings += `El nombre no es válido <br>`
     entrar = true
@@ -66,11 +68,18 @@ formulario.addEventListener('submit', e => {
   }
   if(mensaje.value == null || mensaje.value == ''){
     warnings += `El campo de mensaje no puede estar vacío`
+    entrar = true
   }
 
   document.getElementById('form_error').innerHTML = `
   ${warnings}`
-  document.getElementById('form_error').style.color = 'red';
+  document.getElementById('form_error').style.color = 'red'
+
+  if(entrar){
+    error.innerHTML = warnings
+  } else {
+    error.innerHTML = "Enviado"
+  }
 
 })
 
