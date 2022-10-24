@@ -12,8 +12,6 @@ body {
   color: #000;
 }
 body header {
-  position: static;
-  top: 0px;
   width: 100%;
   height: 100px;
   background-color: #F4A460;
@@ -499,60 +497,76 @@ footer h4 {
     width: 100%;
   }
 }
-@media only screen and (max-width: 768px) {
-  header nav img {
-    width: 50px;
+@media screen and (max-width: 768px) {
+  body {
+    margin: auto;
   }
-  header nav .clima_widget {
+  body header {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+  }
+  body header nav .cafeando_logo {
+    width: 100px;
+  }
+  body header nav .clima_widget {
     display: none;
   }
-  header nav .clima_widget #clima {
+  body header nav .clima_widget #clima {
     display: none;
   }
-  header nav .clima_widget .clima_datos {
+  body header nav .clima_widget .clima_datos {
     display: none;
     opacity: 0;
   }
-  header nav ul {
-    gap: -5px;
+  body header nav ul {
     justify-content: flex-start;
+    align-items: center;
   }
-  header nav ul .menu-option {
+  body header nav ul .menu-option {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  body header nav ul .menu-option ul {
+    position: absolute;
+    left: 30%;
+    top: 55px;
+    flex-direction: row;
+    justify-content: center;
     font-size: 10px;
-    font-weight: 200;
   }
-  main {
+  body main {
     margin: auto;
   }
-  main .hero {
+  body main .hero {
     margin-top: 50px;
     height: 50px;
   }
-  main .hero h1 {
+  body main .hero h1 {
     font-size: 20px;
     margin-bottom: 15px;
   }
-  main .hero p {
+  body main .hero p {
     font-size: 11px;
   }
-  main .hero p span {
+  body main .hero p span {
     padding: 2px;
   }
-  main .recos {
+  body main .recos {
     margin: 20px auto;
-    height: 700px;
+    height: 650px;
     width: 90%;
     padding: 10px;
   }
-  main .recos h3 {
+  body main .recos h3 {
     margin-bottom: 10px;
     letter-spacing: 1px;
     text-decoration: underline;
   }
-  main .recos p {
+  body main .recos p {
     font-size: 13px;
   }
-  main .recos .barrios {
+  body main .recos .barrios {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -560,27 +574,27 @@ footer h4 {
     width: 100%;
     margin-top: -5px;
   }
-  main .recos .barrios .recos-barrios-bar {
+  body main .recos .barrios .recos-barrios-bar {
     border: none;
     border-radius: 10px;
     margin: auto;
     width: 250px;
     height: 250px;
   }
-  main .recos .barrios .recos-barrios-bar .detalles {
+  body main .recos .barrios .recos-barrios-bar .detalles {
     padding: 10px;
     line-height: 15px;
   }
-  #nosotros {
+  body #nosotros {
     margin: auto;
     width: 90%;
     height: 600px;
   }
-  #nosotros h2 {
+  body #nosotros h2 {
     font-size: 20px;
     padding: 15px;
   }
-  #nosotros p {
+  body #nosotros p {
     font-size: 15px;
     line-height: 20px;
     text-align: center;
@@ -588,27 +602,27 @@ footer h4 {
     width: 90%;
     margin: auto;
   }
-  #nosotros .icons {
+  body #nosotros .icons {
     margin-top: 5px;
   }
-  #nosotros .icons h4 {
+  body #nosotros .icons h4 {
     font-size: 20px;
     margin-bottom: 25px;
   }
-  #nosotros .icons img {
+  body #nosotros .icons img {
     width: 100px;
     height: 100px;
   }
-  #contactanos #contenedor {
+  body #contactanos #contenedor {
     width: 400px;
   }
-  #contactanos #contenedor #formulario {
+  body #contactanos #contenedor #formulario {
     width: 400px;
   }
-  #contactanos #contenedor #formulario form input {
+  body #contactanos #contenedor #formulario form input {
     width: 98%;
   }
-  #contactanos #contenedor #formulario form .boton-enviar {
+  body #contactanos #contenedor #formulario form .boton-enviar {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

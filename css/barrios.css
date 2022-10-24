@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .belgrano, .palermo, .caballito, .recoleta, .villa-crespo {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.76);
@@ -100,4 +106,37 @@
 }
 .belgrano .flex-container iframe:hover, .palermo .flex-container iframe:hover, .caballito .flex-container iframe:hover, .recoleta .flex-container iframe:hover, .villa-crespo .flex-container iframe:hover {
   filter: none;
+}
+
+/************************MEDIA QUERIES *********************************/
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body .belgrano, body .palermo, body .caballito, body .recoleta, body .villa-crespo {
+    width: 90%;
+    margin: 25px auto;
+  }
+  body .belgrano .flex-container article, body .palermo .flex-container article, body .caballito .flex-container article, body .recoleta .flex-container article, body .villa-crespo .flex-container article {
+    width: 70%;
+    margin: 5px;
+  }
+  body .belgrano .flex-container article .card, body .palermo .flex-container article .card, body .caballito .flex-container article .card, body .recoleta .flex-container article .card, body .villa-crespo .flex-container article .card {
+    width: 100%;
+    padding: 5px;
+  }
+  body .belgrano .flex-container article .card .card-tit, body .palermo .flex-container article .card .card-tit, body .caballito .flex-container article .card .card-tit, body .recoleta .flex-container article .card .card-tit, body .villa-crespo .flex-container article .card .card-tit {
+    margin: auto;
+  }
+  body .belgrano .flex-container article .card .card-des, body .palermo .flex-container article .card .card-des, body .caballito .flex-container article .card .card-des, body .recoleta .flex-container article .card .card-des, body .villa-crespo .flex-container article .card .card-des {
+    margin: auto;
+  }
+  body .belgrano .flex-container article .fotos_cafe, body .palermo .flex-container article .fotos_cafe, body .caballito .flex-container article .fotos_cafe, body .recoleta .flex-container article .fotos_cafe, body .villa-crespo .flex-container article .fotos_cafe {
+    scroll-snap-align: start;
+    padding: 10px;
+    flex: 0 0 100%;
+  }
+  body .belgrano .flex-container iframe, body .palermo .flex-container iframe, body .caballito .flex-container iframe, body .recoleta .flex-container iframe, body .villa-crespo .flex-container iframe {
+    width: 30%;
+  }
 }/*# sourceMappingURL=barrios.css.map */
