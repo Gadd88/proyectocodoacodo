@@ -460,10 +460,14 @@ main #contactanos #contenedor #formulario form .boton-enviar:hover {
 }
 
 footer {
+  padding: 10px;
   text-align: center;
+  background-color: #F4A460;
+  justify-content: space-evenly;
+  align-items: center;
 }
 footer h4 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .card {
